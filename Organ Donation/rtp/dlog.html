@@ -1,0 +1,214 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Donor login form</title>
+  <link rel="stylesheet" type="text/css" href="form.css">
+  <style>
+    /* General reset for body and html */
+    html, body {
+      margin: 0;
+      padding: 0;
+      width: 100%;
+      font-family: Arial, sans-serif;
+    }
+
+    /* Navbar Styles */
+    .navbar {
+      width: 100%; /* Full width */
+      background-color: #4ba7a7;
+      margin: 0; /* Remove margin */
+      padding: 0; /* Remove padding */
+      border-radius: 0;
+      display: flex;
+      justify-content: center;
+    }
+
+    .navbar ul {
+      list-style-type: none;
+      padding: 0;
+      margin: 0;
+      display: flex;
+      justify-content: center;
+    }
+
+    .navbar li {
+      margin: 12px;
+    }
+
+    .navbar li a {
+      padding: 10px 20px; /* Adjust padding for top/bottom and left/right */
+      text-decoration: none;
+      font-size: 17px;
+      font-weight: 700;
+      color: white;
+      display: inline-block; /* Ensure items are displayed as blocks */
+      border-radius: 0; /* Add border-radius for rounded corners */
+      margin: 0 10px; /* Adjust margin between items */
+    }
+
+    .navbar li a:hover,
+    .navbar li a.active {
+      background-color: #1f2151; /* Change background color on hover/active */
+    }
+
+    .container {
+      display: flex;
+      width: 100%;
+    }
+
+    .image-section {
+      width: 40%;
+      padding: 20px;
+    }
+  
+
+    .image-section img {
+      max-width: 650px;
+      border-radius: 0;
+      margin-bottom: 20px;
+      padding-top: 0%;
+    }
+
+    .form-section {
+      width: 60%;
+      padding: 20px;
+    }
+
+    .form-group {
+      display: flex;
+      flex-direction: column;
+      gap: 10px;
+    }
+
+    .form-group label {
+      margin-top: 10px;
+    }
+
+    .form-group input,
+    .form-group textarea,
+    .form-group select {
+      padding: 8px;
+      border: 1px solid #ccc;
+      border-radius: 4px;
+    }
+
+    fieldset {
+      margin-bottom: 20px;
+      padding: 20px;
+      border: 1px solid #ccc;
+      border-radius: 4px;
+    }
+
+    legend {
+      font-size: 18px;
+      font-weight: bold;
+    }
+
+    .checkbox-wrapper {
+      display: flex;
+      align-items: center;
+    }
+
+    .checkbox-wrapper input {
+      margin-right: 10px;
+    }
+
+    .input-container {
+      display: flex;
+      flex-wrap: wrap;
+      gap: 10px;
+      align-items: center;
+    }
+
+    .input-container label {
+      flex: 1;
+    }
+
+    .input-container input,
+    .input-container select,
+    .input-container textarea {
+      flex: 2;
+      padding: 8px;
+      border: 1px solid #ccc;
+      border-radius: 4px;
+    }
+
+    button {
+      padding: 10px 20px;
+      background-color: #4ba7a7;
+      color: white;
+      border: none;
+      border-radius: 4px;
+      cursor: pointer;
+      font-size: 16px;
+    }
+
+    button:hover {
+      background-color: #1f2151;
+    }
+
+    .image1 {
+      width: 150%;
+      height: auto;
+    }
+
+    .image2 {
+      width: 80%;
+      height: auto;
+    }
+
+    .image3 {
+      width: 90%;
+      height: auto;
+    }
+
+    .image4 {
+      width: 70%;
+      height: auto;
+    }
+
+    .image5 {
+      width: 100%;
+      height: auto;
+    }
+  </style>
+</head>
+<body>
+  <header class="navbar">
+    <ul>
+      <li><a href="./Home.html"><i class="fa-duotone fa-memo-pad"></i>HOME</a></li>
+      <li><a href="./user.html"><i class="fa-duotone fa-memo-pad"></i>PATIENT</a></li>
+      <li><a href="donor.html" class="active">DONOR</a></li>
+      <li><a href="./admin.html"><i class="fa-duotone fa-memo-pad"></i>ADMIN</a></li>
+      <li><a href="./FAQ.html"><i class="fa-duotone fa-memo-pad"></i>FAQ'S</a></li>
+      <li><a href="./contact us.html"><i class="fa-duotone fa-memo-pad"></i>CONTACT US</a></li>
+    </ul>
+  </header>
+  <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Donor Login</title>
+    <link rel="stylesheet" href="login.css">
+  </head>
+  <body>
+    <div class="container">
+      
+      <div class="form-section">
+        <h2>Donor Login</h2>
+        <form action="dlogin.php" method="POST">
+          <div class="form-group">
+            <label for="email">Email:</label>
+            <input type="email" id="email" name="email" required>
+          </div>
+          <div class="form-group">
+            <label for="password">Password:</label>
+            <input type="password" id="password" name="password" required>
+          </div>
+          <button type="submit">Login</button>
+        </form>
+      </div>
+    </div>
+  </body>
+
+</body>
+</html>

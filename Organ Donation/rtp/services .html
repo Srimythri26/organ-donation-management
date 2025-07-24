@@ -1,0 +1,159 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Organ Donation :Services</title>
+    <style>
+        /* navbar  */
+        body{
+    background-color: white ;
+    margin-top: 0;
+    margin-left: 0;
+    margin-right: 0;
+}
+
+.navbar {
+    background-color: #4ba7a7;
+    border-radius: 0; /* Set border-radius to 0 to make it a rectangle */
+    margin-bottom: 20px;
+}
+
+  
+  .navbar ul {
+    overflow: auto;
+    text-align: center;
+    padding: 0;
+    margin: 0;
+  }
+  
+  .navbar li {
+    display: inline-block;
+    list-style: none;
+    margin: 12px 12px;
+  }
+  
+  .navbar li a {
+    padding: 5px 5px;
+    text-decoration: none;
+    font-family: Palatino, "Palatino Linotype", "Palatino LT STD", "Book Antiqua", Georgia, serif;
+    font-size: 17px;
+    font-style: normal;
+    font-variant: normal;
+    font-weight: 700;
+    line-height: 26.4px;
+    transition: 0.3s;
+    color: white;
+    position: relative; /* Add this line */
+}
+.navbar li a:hover {
+    background-color: #787474; /* Change this to the desired color */
+    color: #4ba7a7; /* Change this to the desired text color */
+    border-radius: 5px; /* Add border radius to make it rectangular */
+}
+  
+        .navbar li a:hover, .navbar li a.active {
+            color: white;
+        }
+  
+        
+        
+        /* my code  */
+
+        .cont{
+        
+            height: 625px;
+            width: 100%;
+            background-color:#4ba7a7;
+            border: 2px solid#4ba7a7;
+            background-image: url('https://www.pexels.com/search/abstract%20blue/');
+            background-size: 1000px 1000px;
+            border-radius: 0;
+            margin-top: 20px;
+            margin-left: -2px;
+        }
+    
+        .services{
+            margin: 10px;
+            padding: 17px;
+            font-weight: bold;
+            color: white;
+            font-size: 40px;
+            text-align: center;
+            font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+        }
+
+        .sertext{
+            color: white;
+            font-size: 18px;
+            text-align: center;
+            padding-left: 25px;
+            padding-right: 25px;
+            font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+        }
+
+        /* boxes for services */
+        .box{
+            border: 2px solid white;
+            border-radius: 5px;
+            background-color: white;
+            padding: 27px;
+            margin: 32px;
+            width: 900px;
+            height: 312px;
+            box-shadow: 4px 4px 7px #1a2e7f;
+        }
+        .box:hover{
+            
+        }
+
+        .boxes{
+            margin-top: -10px;
+            display: flex;
+   
+        }
+
+        .bimg{
+
+            height: 213px;
+            width: 355px;
+            /* margin-bottom:25px */
+            margin-left: 8px;
+            border-radius: 8px;
+            box-shadow: 4px 4px 7px rgb(17, 17, 17);
+        }
+
+        .text{
+        padding: 15px;
+        margin-top: 13px;
+        margin-left: -7px;
+        text-align: center;
+        font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+        }
+
+    </style>
+</head>
+<body>
+    
+    <header>
+        <div class="cont">
+            <h2 class="services">Our Services</h2>
+            <p class="sertext">Our main goal is to assist patients in finding the organs for transplant.</p>
+           <section class="boxes">
+           <div id="box1" class="box">
+               <img id="blood" class="bimg" src="health.jpg" alt="oops"> 
+               <div id="cont1" class="text">Provides a platform for those willing to donate. Proper medical check-up.</div></div>
+           <div id="box2" class="box">
+               <img id="organ" class="bimg" src="organ.jpg" alt="oops"> 
+               <div id="cont2" class="text">Oragan Donation: Helping people to fiind the right donar for organ transplantation.</div></div>
+           <div id="box3" class="box">
+               <img id="connect" class="bimg" src="servicess.jpg" alt="oops"> 
+               <div id="cont3" class="text">Assistance: Find the right place for transplantation and further assistance.</div></div>
+           </section>
+   </div>
+        
+    </div>
+    <section class="container"></section>
+    </body>
+    </html>

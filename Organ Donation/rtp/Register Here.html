@@ -1,0 +1,129 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Organ Donation Registration Form</title>
+  <link rel="stylesheet" type="text/css" href="form.css">
+</head>
+<body>
+  <header class="navbar">
+    <ul>
+      <li><a href="./Home.html">Home</a></li>
+      <li><a href="./services .html">Services</a></li>
+      <li><a href="./FAQ.html">FAQ'S</a></li>
+      <li><a href="#">Register Here</a></li>
+      <li><a href="#">About Us</a></li>
+      <li><a href="./Get Involved.html">Get Involved</a></li>
+      <li><a href="./contact us.html" class="active">Contact Us</a></li>
+    </ul>
+  </header>
+
+  <h2>Organ Donation Registration Form</h2>
+
+  <form action="submit.php" method="POST">
+    <fieldset>
+      <legend>1. Personal Information</legend>
+      <div class="form-group">
+        <label for="full-name">Full Name:</label>
+        <input type="text" id="full-name" name="full-name" required>
+
+        <label for="email">Email:</label>
+        <input type="email" id="email" name="email" required>
+
+        <label for="phone">Phone Number:</label>
+        <input type="tel" id="phone" name="phone" required>
+
+        <label for="address">Address:</label>
+        <textarea id="address" name="address" rows="4" required></textarea>
+
+        <label for="age">Age:</label>
+        <input type="number" id="age" name="age" required>
+
+        <label for="any-disease">Any Disease:</label>
+        <input type="text" id="any-disease" name="any-disease">
+      </div>
+    </fieldset>
+
+    <fieldset>
+      <legend> Medical Data</legend>
+      <div class="form-group">
+        <label for="height">Height:</label>
+        <input type="text" id="height" name="height" required>
+      
+        <label for="weight">Weight:</label>
+        <input type="text" id="weight" name="weight" required>
+      
+        <label for="blood-pressure">Blood Pressure:</label>
+        <input type="text" id="blood-pressure" name="blood-pressure" required>
+      
+        <label for="medical-history">Medical History:</label>
+        <textarea id="medical-history" name="medical-history" rows="4" required></textarea>
+      
+        <label for="medications">Current Medications:</label>
+        <textarea id="medications" name="medications" rows="4" required></textarea>
+      </div>
+    </fieldset>
+
+    <fieldset>
+      <legend> Organ Donation Details</legend>
+      <div class="form-group">
+        <label for="organ">Organ to Donate:</label>
+        <select id="organ" name="organ" required>
+          <option value="Heart">Heart</option>
+          <option value="Lungs">Lungs</option>
+          <option value="Kidneys">Kidneys</option>
+          <option value="Liver">Liver</option>
+          <option value="Pancreas">Pancreas</option>
+          <option value="Intestines">Intestines</option>
+          <option value="Corneas">Corneas</option>
+          <option value="Tissues">Tissues</option>
+        </select>
+      
+        <label for="donation-purpose">Donation Purpose:</label>
+        <input type="text" id="donation-purpose" name="donation-purpose">
+      
+        <label for="donation-restriction">Donation Restriction:</label>
+        <input type="text" id="donation-restriction" name="donation-restriction">
+      </div>
+    </fieldset>
+
+    <fieldset>
+      <legend>Acknowledgment and Terms</legend>
+      <div class="form-group">
+        <label for="confirm-info">I confirm that the information I provided in this document is accurate and true.</label>
+        <div class="checkbox-wrapper">
+          <input type="checkbox" id="confirm-info" name="confirm-info" required>
+          <span class="checkbox-text">I agree</span>
+        </div>
+        
+        <label for="allow-donation">I allow my organs to be donated for medical transplant or educational/research purposes.</label>
+        <div class="checkbox-wrapper">
+          <input type="checkbox" id="allow-donation" name="allow-donation" required>
+          <span class="checkbox-text">I agree</span>
+        </div>
+        
+        <label for="inform-family">I acknowledge that I have to inform my family about this registration.</label>
+        <div class="checkbox-wrapper">
+          <input type="checkbox" id="inform-family" name="inform-family" required>
+          <span class="checkbox-text">I agree</span>
+        </div>
+        
+        <label for="keep-documents">I confirm that I always need to keep the organ donor card and the document that came with it.</label>
+        <div class="checkbox-wrapper">
+          <input type="checkbox" id="keep-documents" name="keep-documents" required>
+          <span class="checkbox-text">I agree</span>
+        </div>
+        
+        <label for="submit-registry">I allow my information to be submitted to the donor registry.</label>
+        <div class="checkbox-wrapper">
+          <input type="checkbox" id="submit-registry" name="submit-registry" required>
+          <span class="checkbox-text">I agree</span>
+        </div>
+        
+    </fieldset>
+
+  
+
+    <input type="submit" value="Submit">
+  </form>
+</body>
+</html>

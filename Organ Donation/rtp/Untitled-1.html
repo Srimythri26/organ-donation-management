@@ -1,0 +1,1594 @@
+
+    <!DOCTYPE html>
+    <html lang="en-US">
+
+    <head>
+        <meta charset="utf-8">
+        <link rel="shortcut icon" href="https://organindia.org/wp-content/uploads/2015/02/favicon.ico" type="image/x-icon">
+        <link rel="icon" href="https://organindia.org/wp-content/uploads/2015/02/favicon.ico" type="image/x-icon">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <title>
+                        Pledge Your Organs | Organ Donor Card        </title>
+        <link href="https://www.organindia.org/wp-content/themes/organindia/css/bootstrap.min.css" rel="stylesheet">
+        <link href="https://www.organindia.org/wp-content/themes/organindia/style.css" rel="stylesheet">
+        <link href="https://www.organindia.org/wp-content/themes/organindia/css/responsive.css" rel="stylesheet">
+        <link href="https://www.organindia.org/wp-content/themes/organindia/css/jquery.bxslider.css" rel="stylesheet">
+        <link href="https://www.organindia.org/wp-content/themes/organindia/css/owl.carousel.min.css" rel="stylesheet">
+        <link href="https://www.organindia.org/wp-content/themes/organindia/css/superfish.css" rel="stylesheet">
+        <link href="https://www.organindia.org/wp-content/themes/organindia/font-awesome.min.css" rel="stylesheet">
+        <link href="https://fonts.googleapis.com/css?family=Raleway:400,500,600,700" rel="stylesheet">
+        <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.4.0/css/font-awesome.min.css">
+
+        <style>
+            /*** ESSENTIAL STYLES ***/
+            
+            .sf-menu,
+            .sf-menu * {
+                margin: 0;
+                padding: 0;
+                list-style: none;
+            }
+            
+            .sf-menu li {
+                position: relative;
+            }
+            
+            .sf-menu ul {
+                position: absolute;
+                display: none;
+                top: 100%;
+                left: 0;
+                z-index: 99;
+            }
+            
+            .sf-menu > li {
+                float: left;
+            }
+            
+            .sf-menu li:hover > ul,
+            .sf-menu li.sfHover > ul {
+                display: block;
+            }
+            
+            .sf-menu a {
+                display: block;
+                position: relative;
+            }
+            
+            .sf-menu ul ul {
+                top: 0;
+                left: 100%;
+            }
+            /*** DEMO SKIN ***/
+            
+            .sf-menu {
+                float: left;
+                margin-bottom: 1em;
+            }
+            
+            .sf-menu ul {
+                box-shadow: 2px 2px 6px rgba(0, 0, 0, .2);
+                min-width: 12em;
+                /* allow long menu items to determine submenu width */
+                *width: 12em;
+                /* no auto sub width for IE7, see white-space comment below */
+            }
+            
+            .sf-menu a {
+                border-left: 1px solid #fff;
+                border-top: 1px solid #dFeEFF;
+                /* fallback colour must use full shorthand */
+                border-top: 1px solid rgba(255, 255, 255, .5);
+                padding: .75em 1em;
+                text-decoration: none;
+                zoom: 1;
+                /* IE7 */
+            }
+            
+            .sf-menu a {
+                color: #13a;
+            }
+            
+            .sf-menu li {
+                background: #BDD2FF;
+                white-space: nowrap;
+                /* no need for Supersubs plugin */
+                *white-space: normal;
+                /* ...unless you support IE7 (let it wrap) */
+                -webkit-transition: background .2s;
+                transition: background .2s;
+            }
+            
+            .sf-menu ul li {
+                background: #AABDE6;
+            }
+            
+            .sf-menu ul ul li {
+                background: #9AAEDB;
+            }
+            
+            .sf-menu li:hover,
+            .sf-menu li.sfHover {
+                background: #CFDEFF;
+                /* only transition out, not in */
+                -webkit-transition: none;
+                transition: none;
+            }
+            /*** arrows (for all except IE7) **/
+            
+            .sf-arrows .sf-with-ul {
+                padding-right: 2.5em;
+                *padding-right: 1em;
+                /* no CSS arrows for IE7 (lack pseudo-elements) */
+            }
+            /* styling for both css and generated arrows */
+            
+            .top-navigation ul li a.first_arow:after {
+                content: '>';
+                position: absolute;
+                top: 36%;
+                right: -6px;
+                margin-top: -3px;
+                height: 0;
+                width: 0;
+                font-size: 20px;
+                border: 5px solid transparent;
+                border-top-color: #dFeEFF;
+                border-top-color: rgba(255, 255, 255, .5);
+                transform: rotate(90deg);
+            }
+            
+            .top-navigation ul li ul li a.first_arow2:before {
+                content: '>';
+                position: absolute;
+                top: 50%;
+                right: 8px;
+                margin-top: -17px;
+                height: 0;
+                width: 0;
+                font-size: 17px;
+                border: 5px solid transparent;
+                border-left-color: #dFeEFF;
+                border-left-color: rgba(255, 255, 255, .5);
+            }
+            
+            .sf-arrows > li > .sf-with-ul:focus:after,
+            .sf-arrows > li:hover > .sf-with-ul:after,
+            .sf-arrows > .sfHover > .sf-with-ul:after {
+                border-top-color: white;
+                /* IE8 fallback colour */
+            }
+            /* styling for right-facing arrows */
+            
+            .sf-arrows ul .sf-with-ul:after {
+                margin-top: -5px;
+                margin-right: -3px;
+                border-color: transparent;
+                border-left-color: #dFeEFF;
+                /* edit this to suit design (no rgba in IE8) */
+                border-left-color: rgba(255, 255, 255, .5);
+            }
+            
+            .sf-arrows ul li > .sf-with-ul:focus:after,
+            .sf-arrows ul li:hover > .sf-with-ul:after,
+            .sf-arrows ul .sfHover > .sf-with-ul:after {
+                border-left-color: white;
+            }
+        </style>
+
+        <!--[if lt IE 9]>		  
+            <script src="https://oss.maxcdn.com/libs/html5shiv/3.7.0/html5shiv.js"></script>		  
+            <script src="https://oss.maxcdn.com/libs/respond.js/1.4.2/respond.min.js"></script>		
+        <![endif]-->
+
+        <script src="https://www.organindia.org/wp-content/themes/organindia/js/jquery-1.11.1.min.js"></script>
+        <script src="https://www.organindia.org/wp-content/themes/organindia/js/bootstrap.min.js"></script>
+        <script src="https://www.organindia.org/wp-content/themes/organindia/js/owl.carousel.min.js"></script>
+        <script src="https://www.organindia.org/wp-content/themes/organindia/js/jquery.bxslider.min.js"></script>
+        <script src="https://www.organindia.org/wp-content/themes/organindia/js/mediaelement-and-player.min.js"></script>
+        <script src="https://www.organindia.org/wp-content/themes/organindia/js/hoverIntent.js"></script>
+        <script src="https://www.organindia.org/wp-content/themes/organindia/js/jquery.fitvids.js"></script>
+        <script src="https://www.organindia.org/wp-content/themes/organindia/js/jquery.validate.min.js"></script>
+        <script src="https://www.organindia.org/wp-content/themes/organindia/js/oindia.js"></script>
+        <script src="https://www.organindia.org/wp-content/themes/organindia/js/superfish.js"></script>
+        <script src="https://www.organindia.org/wp-content/themes/organindia/js/viewer.js"></script>
+        <script src="https://www.organindia.org/wp-content/themes/organindia/js/main-new.js"></script>
+
+        <script type="text/javascript">
+            $(document).ready(function() {
+                $("#main-slider").bxSlider({
+                    pager: !1,
+                    controls: !0,
+                    pause: 15e3,
+                    auto: !0
+                }), $(".video-block").fitVids(), $("ul.sf-menu").superfish(), $("#events-slider").bxSlider({
+                    slideWidth: 270,
+                    minSlides: 1,
+                    maxSlides: 2,
+                    moveSlides: 1,
+                    slideMargin: 10,
+                    pager: !1,
+                    captions: !0
+                }), $("#celebrity-slider").bxSlider({
+                    minSlides: 1,
+                    maxSlides: 1,
+                    moveSlides: 1,
+                    slideMargin: 10,
+                    pager: !1,
+                    captions: !0
+                }), $("#contact-btn").click(function() {
+                    return $("#home-contact").slideDown(), $(this).hide(), !1
+                }), $("#recent-posts-slider").bxSlider({
+                    minSlides: 1,
+                    maxSlides: 1,
+                    moveSlides: 1,
+                    pager: !1,
+                    captions: !0
+                }), $("#news-slider").bxSlider({
+                    slideWidth: 270,
+                    minSlides: 1,
+                    maxSlides: 2,
+                    moveSlides: 1,
+                    slideMargin: 10,
+                    pager: !1,
+                    captions: !0
+                }), $(".films-slider").bxSlider({
+                    minSlides: 1,
+                    maxSlides: 1,
+                    moveSlides: 1,
+                    pager: !1,
+                    captions: !0
+                }), 
+                    $("video").mediaelementplayer(), $(function() {
+                    var e = $("#pull");
+                    menu = $("#main-nav-mobile ul"), menuHeight = menu.height(), $(e).on("click", function(e) {
+                        e.preventDefault(), menu.slideToggle()
+                    })
+                })
+            });
+
+            $("body").on("contextmenu", "img", function(e) {
+              return false;
+            });
+        </script>
+
+
+
+        
+	<!-- This site is optimized with the Yoast SEO plugin v17.8 - https://yoast.com/wordpress/plugins/seo/ -->
+	<meta name="description" content="Pledge your organs viz. kidneys, liver, heart, lungs, etc. Fill the donor pledge form and get your generated donor card - all our pledges will be forwarded to the NOTTO." />
+	<meta name="robots" content="index, follow, max-snippet:-1, max-image-preview:large, max-video-preview:-1" />
+	<link rel="canonical" href="https://www.organindia.org/claim-your-donor-card/" />
+	<meta property="og:locale" content="en_US" />
+	<meta property="og:type" content="article" />
+	<meta property="og:title" content="Pledge Your Organs | Organ Donor Card" />
+	<meta property="og:description" content="Pledge your organs viz. kidneys, liver, heart, lungs, etc. Fill the donor pledge form and get your generated donor card - all our pledges will be forwarded to the NOTTO." />
+	<meta property="og:url" content="https://www.organindia.org/claim-your-donor-card/" />
+	<meta property="article:publisher" content="https://www.facebook.com/ORGANINDIA" />
+	<meta property="article:modified_time" content="2020-11-17T12:13:27+00:00" />
+	<meta name="twitter:card" content="summary" />
+	<meta name="twitter:site" content="@ORGANINDIA1" />
+	<script type="application/ld+json" class="yoast-schema-graph">{"@context":"https://schema.org","@graph":[{"@type":"WebSite","@id":"https://www.organindia.org/#website","url":"https://www.organindia.org/","name":"","description":"","potentialAction":[{"@type":"SearchAction","target":{"@type":"EntryPoint","urlTemplate":"https://www.organindia.org/?s={search_term_string}"},"query-input":"required name=search_term_string"}],"inLanguage":"en-US"},{"@type":"WebPage","@id":"https://www.organindia.org/claim-your-donor-card/#webpage","url":"https://www.organindia.org/claim-your-donor-card/","name":"Pledge Your Organs | Organ Donor Card","isPartOf":{"@id":"https://www.organindia.org/#website"},"datePublished":"2014-06-03T08:25:45+00:00","dateModified":"2020-11-17T12:13:27+00:00","description":"Pledge your organs viz. kidneys, liver, heart, lungs, etc. Fill the donor pledge form and get your generated donor card - all our pledges will be forwarded to the NOTTO.","breadcrumb":{"@id":"https://www.organindia.org/claim-your-donor-card/#breadcrumb"},"inLanguage":"en-US","potentialAction":[{"@type":"ReadAction","target":["https://www.organindia.org/claim-your-donor-card/"]}]},{"@type":"BreadcrumbList","@id":"https://www.organindia.org/claim-your-donor-card/#breadcrumb","itemListElement":[{"@type":"ListItem","position":1,"name":"Home","item":"https://www.organindia.org/"},{"@type":"ListItem","position":2,"name":"Pledge to be an Organ Donor"}]}]}</script>
+	<!-- / Yoast SEO plugin. -->
+
+
+<link rel='dns-prefetch' href='//s.w.org' />
+<link rel="alternate" type="application/rss+xml" title=" &raquo; Feed" href="https://www.organindia.org/feed/" />
+<link rel="alternate" type="application/rss+xml" title=" &raquo; Comments Feed" href="https://www.organindia.org/comments/feed/" />
+<link rel="alternate" type="application/rss+xml" title=" &raquo; Pledge to be an Organ Donor Comments Feed" href="https://www.organindia.org/claim-your-donor-card/feed/" />
+		<script type="text/javascript">
+			window._wpemojiSettings = {"baseUrl":"https:\/\/s.w.org\/images\/core\/emoji\/13.0.1\/72x72\/","ext":".png","svgUrl":"https:\/\/s.w.org\/images\/core\/emoji\/13.0.1\/svg\/","svgExt":".svg","source":{"concatemoji":"https:\/\/www.organindia.org\/wp-includes\/js\/wp-emoji-release.min.js?ver=5.6.13"}};
+			!function(e,a,t){var n,r,o,i=a.createElement("canvas"),p=i.getContext&&i.getContext("2d");function s(e,t){var a=String.fromCharCode;p.clearRect(0,0,i.width,i.height),p.fillText(a.apply(this,e),0,0);e=i.toDataURL();return p.clearRect(0,0,i.width,i.height),p.fillText(a.apply(this,t),0,0),e===i.toDataURL()}function c(e){var t=a.createElement("script");t.src=e,t.defer=t.type="text/javascript",a.getElementsByTagName("head")[0].appendChild(t)}for(o=Array("flag","emoji"),t.supports={everything:!0,everythingExceptFlag:!0},r=0;r<o.length;r++)t.supports[o[r]]=function(e){if(!p||!p.fillText)return!1;switch(p.textBaseline="top",p.font="600 32px Arial",e){case"flag":return s([127987,65039,8205,9895,65039],[127987,65039,8203,9895,65039])?!1:!s([55356,56826,55356,56819],[55356,56826,8203,55356,56819])&&!s([55356,57332,56128,56423,56128,56418,56128,56421,56128,56430,56128,56423,56128,56447],[55356,57332,8203,56128,56423,8203,56128,56418,8203,56128,56421,8203,56128,56430,8203,56128,56423,8203,56128,56447]);case"emoji":return!s([55357,56424,8205,55356,57212],[55357,56424,8203,55356,57212])}return!1}(o[r]),t.supports.everything=t.supports.everything&&t.supports[o[r]],"flag"!==o[r]&&(t.supports.everythingExceptFlag=t.supports.everythingExceptFlag&&t.supports[o[r]]);t.supports.everythingExceptFlag=t.supports.everythingExceptFlag&&!t.supports.flag,t.DOMReady=!1,t.readyCallback=function(){t.DOMReady=!0},t.supports.everything||(n=function(){t.readyCallback()},a.addEventListener?(a.addEventListener("DOMContentLoaded",n,!1),e.addEventListener("load",n,!1)):(e.attachEvent("onload",n),a.attachEvent("onreadystatechange",function(){"complete"===a.readyState&&t.readyCallback()})),(n=t.source||{}).concatemoji?c(n.concatemoji):n.wpemoji&&n.twemoji&&(c(n.twemoji),c(n.wpemoji)))}(window,document,window._wpemojiSettings);
+		</script>
+		<style type="text/css">
+img.wp-smiley,
+img.emoji {
+	display: inline !important;
+	border: none !important;
+	box-shadow: none !important;
+	height: 1em !important;
+	width: 1em !important;
+	margin: 0 .07em !important;
+	vertical-align: -0.1em !important;
+	background: none !important;
+	padding: 0 !important;
+}
+</style>
+	<link rel='stylesheet' id='slickquiz_admin_css-css'  href='https://www.organindia.org/wp-content/plugins/blasterquiz/css/admin.css?ver=5.6.13' type='text/css' media='all' />
+<link rel='stylesheet' id='socialauth-style-css'  href='https://www.organindia.org/wp-content/plugins/socialauth/css/socialauth-style.css?ver=5.6.13' type='text/css' media='all' />
+<link rel='stylesheet' id='wp-block-library-css'  href='https://www.organindia.org/wp-includes/css/dist/block-library/style.min.css?ver=5.6.13' type='text/css' media='all' />
+<link rel='stylesheet' id='contact-form-7-css'  href='https://www.organindia.org/wp-content/plugins/contact-form-7/includes/css/styles.css?ver=5.4.2' type='text/css' media='all' />
+<link rel='stylesheet' id='responsive-lightbox-swipebox-css'  href='https://www.organindia.org/wp-content/plugins/responsive-lightbox/assets/swipebox/swipebox.min.css?ver=2.4.5' type='text/css' media='all' />
+<script type='text/javascript' src='https://www.organindia.org/wp-includes/js/jquery/jquery.min.js?ver=3.5.1' id='jquery-core-js'></script>
+<script type='text/javascript' src='https://www.organindia.org/wp-includes/js/jquery/jquery-migrate.min.js?ver=3.3.2' id='jquery-migrate-js'></script>
+<script type='text/javascript' src='https://www.organindia.org/wp-content/plugins/blasterquiz/js/admin.js?ver=5.6.13' id='slickquiz_admin_js-js'></script>
+<script type='text/javascript' src='https://www.organindia.org/wp-content/plugins/socialauth/js/socialauth-popup.js?ver=5.6.13' id='socialauth-popup-js'></script>
+<script type='text/javascript' src='https://www.organindia.org/wp-content/plugins/socialauth/js/socialauth-common.js?ver=5.6.13' id='socialauth-common-js'></script>
+<script type='text/javascript' src='https://www.organindia.org/wp-content/plugins/socialauth/js/socialauth-modal.js?ver=5.6.13' id='socialauth-modal-js'></script>
+<script type='text/javascript' src='https://www.organindia.org/wp-content/plugins/socialauth/js/socialauth-transition.js?ver=5.6.13' id='socialauth-transition-js'></script>
+<script type='text/javascript' src='https://www.organindia.org/wp-content/plugins/responsive-lightbox/assets/swipebox/jquery.swipebox.min.js?ver=2.4.5' id='responsive-lightbox-swipebox-js'></script>
+<script type='text/javascript' src='https://www.organindia.org/wp-includes/js/underscore.min.js?ver=1.8.3' id='underscore-js'></script>
+<script type='text/javascript' src='https://www.organindia.org/wp-content/plugins/responsive-lightbox/assets/infinitescroll/infinite-scroll.pkgd.min.js?ver=5.6.13' id='responsive-lightbox-infinite-scroll-js'></script>
+<script type='text/javascript' id='responsive-lightbox-js-before'>
+var rlArgs = {"script":"swipebox","selector":"lightbox","customEvents":"","activeGalleries":true,"animation":true,"hideCloseButtonOnMobile":false,"removeBarsOnMobile":false,"hideBars":true,"hideBarsDelay":5000,"videoMaxWidth":1080,"useSVG":true,"loopAtEnd":false,"woocommerce_gallery":false,"ajaxurl":"https:\/\/www.organindia.org\/wp-admin\/admin-ajax.php","nonce":"a2b4ea4591","preview":false,"postId":1465,"scriptExtension":false};
+</script>
+<script type='text/javascript' src='https://www.organindia.org/wp-content/plugins/responsive-lightbox/js/front.js?ver=2.4.5' id='responsive-lightbox-js'></script>
+<link rel="https://api.w.org/" href="https://www.organindia.org/wp-json/" /><link rel="alternate" type="application/json" href="https://www.organindia.org/wp-json/wp/v2/pages/1465" /><link rel="EditURI" type="application/rsd+xml" title="RSD" href="https://www.organindia.org/xmlrpc.php?rsd" />
+<link rel="wlwmanifest" type="application/wlwmanifest+xml" href="https://www.organindia.org/wp-includes/wlwmanifest.xml" /> 
+<meta name="generator" content="WordPress 5.6.13" />
+<link rel='shortlink' href='https://www.organindia.org/?p=1465' />
+<link rel="alternate" type="application/json+oembed" href="https://www.organindia.org/wp-json/oembed/1.0/embed?url=https%3A%2F%2Fwww.organindia.org%2Fclaim-your-donor-card%2F" />
+<link rel="alternate" type="text/xml+oembed" href="https://www.organindia.org/wp-json/oembed/1.0/embed?url=https%3A%2F%2Fwww.organindia.org%2Fclaim-your-donor-card%2F&#038;format=xml" />
+
+		<!-- Global site tag (gtag.js) - Google Ads: 966578858 -->
+        <script async src="https://www.googletagmanager.com/gtag/js?id=AW-966578858"></script>
+        <script>
+          window.dataLayer = window.dataLayer || [];
+          function gtag(){dataLayer.push(arguments);}
+          gtag('js', new Date());
+
+          gtag('config', 'AW-966578858');
+        </script>
+
+            <!-- <script>
+                (function(i, s, o, g, r, a, m) {
+                    i['GoogleAnalyticsObject'] = r;
+                    i[r] = i[r] || function() {
+
+                        (i[r].q = i[r].q || []).push(arguments)
+                    }, i[r].l = 1 * new Date();
+                    a = s.createElement(o),
+
+                        m = s.getElementsByTagName(o)[0];
+                    a.async = 1;
+                    a.src = g;
+                    m.parentNode.insertBefore(a, m)
+
+                })(window, document, 'script', '//www.google-analytics.com/analytics.js', 'ga');
+
+                ga('create', 'UA-58472555-1', 'auto');
+
+                ga('require', 'displayfeatures');
+
+                ga('send', 'pageview');
+
+            </script> -->
+
+            <script type="application/ld+json">
+                { "@context" : "http://schema.org",
+                "@type" : "Organization",
+                "Name" : "ORGAN India",
+                "url" : "https://www.organindia.org/",
+                "contactPoint" : [{
+                "@type" : "ContactPoint",
+                "telephone" : "+1-800-120-3648",
+                "contactType" : "Customer Service",
+                "contactOption" : "TollFree"
+                }],
+                "logo" : "https://www.organindia.org/wp-content/themes/organindia/images/logo-4.png",
+                "sameAs" : [ "https://www.facebook.com/ORGANINDIA",
+                "https://twitter.com/organindia1",
+                "https://www.instagram.com/organ_india/",
+                "https://in.linkedin.com/in/organ-india-414933a0"
+                ]
+                }
+            </script>
+            
+            <link href="https://www.organindia.org/wp-content/themes/organindia/css/owl.carousel.css" rel="stylesheet">
+            <!-- <link href="https://www.organindia.org/wp-content/themes/organindia/css/owl.theme.css" rel="stylesheet"> -->
+            <style>
+                #owl-demo .item {
+                    /* background: #42bdc2; */
+                    padding: 15px 0px;
+                    margin: 5px 10px;
+                    color: #FFF;
+                    -webkit-border-radius: 3px;
+                    -moz-border-radius: 3px;
+                    border-radius: 3px;
+                    text-align: center;
+                }
+                
+                #owl-demo .item img {
+                    width: 500px;
+                    height: 282px;
+                }
+                
+                .vcontainer a {
+                    display: none !important;
+                }
+                
+                .h1 {
+                    text-align: left;
+                    margin-bottom: 30px;
+                    border-bottom: solid 1px #d5d5d5;
+                    font-weight: 400;
+                    padding: 40px 0 10px;
+                }
+                
+                .mail a:hover {
+                    text-decoration: none !important;
+                }
+                
+                .do_9523 img:hover {
+                    -webkit-transition: all 200ms ease-in;
+                    -webkit-transform: scale(1.2);
+                    -ms-transition: all 200ms ease-in;
+                    -ms-transform: scale(1.2);
+                    -moz-transition: all 200ms ease-in;
+                    -moz-transform: scale(1.2);
+                    transition: all 200ms ease-in;
+                    transform: scale(1.2);
+                }
+                
+                .menu-item-1584 {
+                    display: none;
+                }
+            </style>
+
+            <script>
+                $(document).ready(function() {
+                    $("#owl-demo").owlCarousel({
+                        itemsCustom: [
+                            [320, 1],
+                            [450, 1],
+                            [700, 1],
+                            [1200, 2]
+                        ],
+                        navigation: !0
+                    }), $("#owl-demo1").owlCarousel({
+                        navigation: !0,
+                        slideSpeed: 300,
+                        paginationSpeed: 400,
+                        singleItem: !0
+                    })
+                });
+				
+            </script>
+
+        <!-- Global site tag (gtag.js) - Google Analytics -->
+        <script async src="https://www.googletagmanager.com/gtag/js?id=G-1YYW8TEVDY"></script>
+        <script>
+            window.dataLayer = window.dataLayer || [];
+            function gtag(){dataLayer.push(arguments);}
+            gtag('js', new Date());
+
+            gtag('config', 'G-1YYW8TEVDY');
+        </script>
+
+        <!-- Facebook Pixel Code -->
+        <script>
+            !function(f,b,e,v,n,t,s)
+            {if(f.fbq)return;n=f.fbq=function(){n.callMethod?
+            n.callMethod.apply(n,arguments):n.queue.push(arguments)};
+            if(!f._fbq)f._fbq=n;n.push=n;n.loaded=!0;n.version='2.0';
+            n.queue=[];t=b.createElement(e);t.async=!0;
+            t.src=v;s=b.getElementsByTagName(e)[0];
+            s.parentNode.insertBefore(t,s)}(window,document,'script',
+            'https://connect.facebook.net/en_US/fbevents.js');
+            fbq('init', '2444780582237633'); 
+            fbq('track', 'PageView');
+        </script>
+        <noscript>
+            <img height="1" width="1" 
+            src="https://www.facebook.com/tr?id=2444780582237633&ev=PageView
+            &noscript=1"/>
+        </noscript>
+        <!-- End Facebook Pixel Code -->
+        
+            <link rel="stylesheet" href="https://www.organindia.org/wp-content/themes/organindia/css/overlay-minimal.css">
+            <link rel="stylesheet" href="https://www.organindia.org/wp-content/themes/organindia/css/videolightbox.css">
+            <script src="https://www.organindia.org/wp-content/themes/organindia/js/swfobject.js"></script>
+            <script src="https://www.organindia.org/wp-content/themes/organindia/js/videolightbox.js"></script>
+            <script src="https://www.organindia.org/wp-content/themes/organindia/js/jquery.tools.min.js"></script>
+            <script>
+            
+            function _noticeClose(){
+                window.scrollTo({ top: 0, behavior: 'smooth' });
+                $('body').removeAttr('id');
+            }
+            </script>
+           
+    </head>
+
+    <body class="page-template page-template-donor-card-updates page-template-donor-card-updates-php page page-id-1465" id="notify" >
+
+    <div id="wrapper">
+        <div id="header">
+            
+            <!-- <div class="header-notify">
+                <div class="container-fluid">
+                    <a href="https://www.organindia.org/wp-content/uploads/2020/07/List-of-Plasma-Donation-Centres-in-India-1_compressed.pdf" target="blank">For COVID-19 Survivors -  Click here for a list of plasma donation centers in india </a>
+                    <a class="close-notify" onclick="_noticeClose()"><i class="fa fa-close"></i></a>
+                </div>
+            </div> -->
+
+            <div class="top-notice">
+                <div class="container-fluid">
+                    Generate your One Time Pass to Heaven. You are just one step away! Become an Organ Donor! For more, <a href="https://www.organindia.org/MTVOrganDaan/" target="blank">visit www.mtvorgandaan.com</a>
+                    <!-- <a class="close-notify" onclick="_noticeClose()"><i class="fa fa-close"></i></a> -->
+                </div>
+            </div>
+            
+            <div class="container-fluid">
+                <div class="show859">
+                    <ul class="">
+                        <li><a href="mailto:info@organindia.org" rel="nofollow" target="_blank">info@organindia.org</a> &nbsp;|</li>
+                        <li>Toll-free <span class="hide-content">Helpline</span> Number- 18001203648</li>
+                    </ul>
+                </div>
+                <div class="menu-holder">
+                    <div class="logo-container">
+                        <div id="logo"> 
+                            <a href="https://www.organindia.org">
+                                <img src="https://www.organindia.org/wp-content/themes/organindia/images/logo-4.png" alt="ORGAN (organ receiving & giving awareness network) India" class="img-responsive" />
+                            </a>
+                            <p>UNDER THE AEGIS OF NOTTO</p>
+                        </div>
+                    </div>
+
+                    <div class="menu-container">
+                        <div class="top-social mobilenonesocial">
+                            <ul>
+                                <li class="hide859"><a href="mailto:info@organindia.org" rel="nofollow" target="_blank">info@organindia.org</a> &nbsp;|</li>
+                                <li class="hide859">Toll-free Helpline Number- 18001203648 </li>
+                                <li><a href="https://www.facebook.com/ORGANINDIA" rel="nofollow" target="_blank"><i class="fa fa-facebook"></i></a></li>
+                                <li><a href="https://www.instagram.com/organ_india" rel="nofollow" target="_blank"><i class="fa fa-instagram"></i></a></li>
+                                <li><a href="https://twitter.com/organindia1" rel="nofollow" target="_blank"><i class="fa fa-twitter"></i></a></li>
+                                <li><a href=" https://www.youtube.com/channel/UC2BEGlduLNwQgx7Q5WZv3rA/featured" rel="nofollow" target="_blank"><i class="fa fa-youtube"></i></a></li>
+                                <li><a href="https://in.linkedin.com/pub/organ-india/a0/933/414" rel="nofollow" target="_blank"><i class="fa fa-linkedin"></i></a></li>
+                            </ul>
+                        </div>
+                    
+                        <div class="contact-info">
+                            <span class="mail do_9523">
+                                <a href="/fund-this-cause/" class="fund-button" >
+                                    Fund This Cause
+                                </a>
+                            </span>
+                        </div>
+                    </div>
+
+                    <nav id="cssmenu">
+                        <div class="button"></div>
+
+                        <ul class="mobilespacingnav">
+                            <li class='active'><a href='https://www.organindia.org/'>HOME</a></li>
+
+                            <li>
+                                <a href='https://www.organindia.org/about-us/'>ABOUT</a>
+                                <ul>
+                                    <li><a href='#' title="WHO WE ARE">WHO WE ARE</a>
+                                        <ul>
+                                            <li><a href='https://www.organindia.org/about-us/our-history/' title="OUR HISTORY">OUR HISTORY</a></li>
+                                            <li><a href='https://www.organindia.org/about-us/our-mission/' title="OUR MISSION">OUR MISSION</a></li>
+                                            <li><a href='https://www.organindia.org/about-us/our-team/' title="OUR TEAM">OUR TEAM</a></li>
+                                            <li><a href='https://www.organindia.org/about-us/our-trustees/' title="OUR TRUSTEES">OUR TRUSTEES</a></li>
+                                            <li><a href='https://www.organindia.org/about-us/our-advisors/' title="OUR ADVISORS">OUR ADVISORS</a></li>
+                                            <li><a href='https://www.organindia.org/about-us/ambassadors-organ-donation/' title="OUR ADVISORS">OUR AMBASSADORS</a></li>
+                                            <li><a href='https://www.organindia.org/about-us/legal-financial-information/' title="OURLEGAL & FINANCIAL INFORMATION">OUR LEGAL &#038; FINANCIAL INFORMATION</a></li>
+                                            <li><a href='https://www.organindia.org/about-us/awards-accreditation/' title="ACCREDITATION & AWARDS">ACCREDITATION &#038; AWARDS</a></li>
+                                            <li><a href='https://www.organindia.org/about-us/our-network/' title="OUR NETWORK">OUR NETWORK</a></li>
+                                            <li><a href='https://www.organindia.org/about-us/annual-reports/' title="ANNUAL REPORTS">ANNUAL REPORTS</a></li>
+                                        </ul>
+                                    </li>
+
+                                    <li><a href='#' title="WHAT WE DO">WHAT WE DO</a>
+                                        <ul>
+                                            <li><a href='https://www.organindia.org/about-us/awareness-and-outreach/' title="Awareness &amp; Outreach">Awareness &amp; Outreach </a></li>
+                                            <li><a href='https://www.organindia.org/about-us/advocacy/' title="Advocacy">Advocacy</a></li>
+                                            <li><a href='https://www.organindia.org/about-us/research/' title="Research">Research</a></li>
+                                            <li><a href='https://www.organindia.org/about-us/donor-pledges/' title="Donor pledges">Donor pledges</a></li>
+                                        </ul>
+                                    </li>
+                                    
+                                    <li><a href="https://www.organindia.org/contact-us/" title="Contact Us">Contact Us</a></li>
+                                </ul>
+                            </li>
+
+                            <li>
+                                <a href='#'>Know Organ Donation </a>
+                                <ul>
+                                    <li><a href='https://www.organindia.org/overviews/know-organ-donation/' title="About Organ Donation">About Organ Donation</a></li>
+                                    <li><a href="https://www.organindia.org/myths-and-facts/" title="Myths and Facts">Myths and Facts</a></li>
+                                    <li><a href="https://www.organindia.org/16-things-to-know-about-organ-donation/" title="16 things to know about organ donation">16 things to know about organ donation</a></li>
+                                </ul>
+                            </li>
+
+                            <li>
+                                <a href="https://www.organindia.org/information-for-recipients/" >Recipients Information</a>
+                                <ul>
+                                    <li>
+                                        <a href='#'  title="Organ-specific information">Organ-specific information</a>
+                                        <ul class="submenuwidth1">
+                                            <li>
+                                                <a href='javascript:void(0)'  title="Liver">Liver </a>
+                                                <ul>
+                                                    <li><a href="https://www.organindia.org/the-liver-and-liver-disease/"  title="The Liver and Liver Disease">The Liver and Liver Disease</a></li>
+                                                    <li><a href="https://www.organindia.org/diagnosis-and-pre-transplant/"  title="Diagnosis and Pre-transplant">Diagnosis and Pre-transplant</a></li>
+                                                    <li><a href="https://www.organindia.org/recipient-evaluation-and-preparation/" title="Recipient Evaluation and Preparation">Recipient Evaluation and Preparation</a></li>
+                                                    <li><a href="https://www.organindia.org/donor-evaluation-and-preparation/" title="Donor Evaluation and Preparation">Donor Evaluation and Preparation</a></li>
+                                                    <li><a href="https://www.organindia.org/approaching-the-transplant/" title="Approaching the Transplant">Approaching the Transplant</a></li>
+                                                    <li><a href="https://www.organindia.org/post-transplant-care/" title="Post-transplant Care">Post-transplant Care</a></li>
+                                                </ul>
+                                            </li>
+                                            <li>
+                                                <a href='javascript:void(0)' title="Heart">Heart </a>
+                                                <ul>
+                                                    <li><a href="https://www.organindia.org/registering-the-stressful-wait-preparation/" title="Registering, The Stressful Wait, Preparation">Registering, The Stressful Wait, Preparation</a></li>
+                                                    <li><a href="https://www.organindia.org/rejection-infections/" title="Rejection &amp; Infections">Rejection &amp; Infections</a></li>
+                                                    <li><a href="https://www.organindia.org/7-things-you-need-to-know-post-transplant/" title="Things You Need to Know Post Transplant">Things You Need to Know Post Transplant</a></li>
+                                                    <li><a href="https://www.organindia.org/heart-transplant/" title="Heart Transplant">Heart Transplant</a></li>
+                                                    <li><a href="https://www.organindia.org/the-transplant-heart/" title="The Transplant">The Transplant</a></li>
+                                                    <li><a href="https://www.organindia.org/going-back-home-dos-donts/" title="Going Back Home Dos &amp; Donts">Going Back Home Dos &amp; Donts</a></li>
+                                                    <li><a href="https://www.organindia.org/post-transplant-care-heart/" title="Post Transplant Care">Post Transplant Care</a></li>
+                                                </ul>
+                                            </li>
+                                            <li>
+                                                <a href='javascript:void(0)' title="Kidney">Kidney </a>
+                                                <ul>
+                                                    <li><a href="https://www.organindia.org/pre-transplant-recipient-patient-evaluation/" title="Pre-transplant recipient (patient) evaluation">Pre-transplant recipient (patient) evaluation</a></li>
+                                                    <li><a href="https://www.organindia.org/transplant-surgery/" title="Transplant surgery">Transplant surgery</a></li>
+                                                    <li><a href="https://www.organindia.org/post-transplant-care-2/" title="Post-transplant care">Post-transplant care</a></li>
+                                                    <li><a href="https://www.organindia.org/the-kidneys/" title="The Kidneys">The Kidneys</a></li>
+                                                    <li><a href="https://www.organindia.org/kidney-diseases/" title="Kidney Diseases">Kidney Diseases</a></li>
+                                                    <li><a href="https://www.organindia.org/recipient-preparation-and-evaluation/" title="Recipient preparation and evaluation">Recipient preparation and evaluation</a></li>
+                                                </ul>
+                                            </li>
+                                            <li>
+                                                <a href='javascript:void(0)' title="Lungs">Lungs </a>
+                                                <ul>
+                                                    <li><a href="https://www.organindia.org/lungs/lung-transplant/" title="Lung Transplant">Lung Transplant</a></li>
+                                                    <li><a href="https://www.organindia.org/lungs/reasons-transplantation/" title="Reasons For Transplantation">Reasons For Transplantation</a></li>
+                                                    <li><a href="https://www.organindia.org/lungs/lung-transplant-evaluation-allocation-scoring-matching/" title="Lung Transplant Evaluation, Allocation, Scoring &amp; Matching">Lung Transplant Evaluation, Allocation, Scoring &amp; Matching</a></li>
+                                                    <li><a href="https://www.organindia.org/lungs/waiting-organ-donor/" title="Waiting For An Organ Donor">Waiting For An Organ Donor</a></li>
+                                                    <li><a href="https://www.organindia.org/lungs/getting-call/" title="Getting The Call">Getting The Call</a></li>
+                                                    <li><a href="https://www.organindia.org/lungs/lung-transplant-operation-post-operative-stay/" title="The Lung Transplant Operation &amp; Post-Operative Stay">The Lung Transplant Operation &amp; Post-Operative Stay</a></li>
+                                                    <li><a href="https://www.organindia.org/lungs/living-new-lungs-rejections-infections/" title="Living With New Lungs Rejections &amp; Infections">Living With New Lungs Rejections &amp; Infections</a></li>
+                                                    <li><a href="https://www.organindia.org/lungs/things-must-know-lung-transplant/" title="Things You MUST Know After a Lung Transplant">Things You MUST Know After a Lung Transplant</a></li>
+                                                    <li><a href="https://www.organindia.org/lungs/clinic-visits-studies/" title="Clinic Visits &amp; Studies">Clinic Visits &amp; Studies</a></li>
+                                                </ul>
+                                            </li>
+                                            <li><a href="javascript:void(0)" title="Intestines">Intestines</a></li>
+                                            <li><a href="https://www.organindia.org/pancreas/" title="Pancreas">Pancreas</a></li>
+                                        </ul>
+                                    </li>
+                                </ul>
+                            </li>
+
+                            <li><a href="https://www.organindia.org/tissue-and-body-donation/" >Eye & Skin</a></li>
+                            <li><a href="https://www.organindia.org/become-a-volunteer/">Pledge</a></li>
+
+                            <li>
+                                <a href="#"  title="Laws & Reports">Laws & Reports</a>
+                                <ul>
+                                    <li><a href="https://www.organindia.org/laws-made-easy/">Transplant Law Made Easy</a></li>
+                                    <li><a href='#'  title="THOA ACTS">THOA ACTS</a>
+                                        <ul class="submenuwidth1">
+                                            <li><a target="_blank" href="https://organindia.org/wp-content/uploads/2014/10/1.THOA-ACT-1994.pdf" title="THOA ACT 1994">THOA ACT 1994</a></li>
+                                            <li><a target="_blank" href="https://organindia.org/wp-content/uploads/2014/10/2.THO-Rules-1995-Original-Rules.pdf" title="THO Rules 1995">THO Rules 1995</a></li>
+                                            <li><a target="_blank" href="https://organindia.org/wp-content/uploads/2014/10/3.THOA-amendment-2011.pdf" title="THOA Amendment 2011">THOA Amendment 2011</a></li>
+                                            <li><a target="_blank" href="https://www.organindia.org/wp-content/uploads/2014/10/4.THOA-amended-ACT-2011.pdf" title="THOA Amended ACT 2011">THOA Amended ACT 2011</a></li>
+                                            <li><a target="_blank" href="https://www.organindia.org/wp-content/uploads/2014/10/5.THOA-Rules-2014.pdf" title="THOA Rules 2014">THOA Rules 2014</a></li>
+                                        </ul>
+                                    </li>
+                                    <li><a href="https://www.organindia.org/wp-content/uploads/2014/11/ORGAN-Research-Report.pdf" title="Full Research Report">Full Research Report</a></li>
+                                    <li><a href="https://www.organindia.org/synopsis-of-report-a-study-of-the-deceased-organ-donation-environment-in-delhincr/" title="Synopsis of Report">Synopsis of Report</a></li>
+									<li><a target="_blank" href="https://www.organindia.org/wp-content/uploads/2023/06/Report-Team-India-at-World-Transplant-Games-2023.pdf" title="Team India at WTG 2023">Team India at WTG 2023</a></li>
+                                </ul>
+                            </li>
+
+                            <li><a href="https://www.organindia.org/organ-india-support-groups/">Support Group</a></li>
+                            <li><a target="_blank" href="https://www.organindia.org/ORGAN-DONATION/">Blog</a></li>
+                        </ul>
+                    </nav> 
+                </div>
+            </div>
+
+            <script type="text/javascript">
+                (function ($) {
+                $.fn.menumaker = function (options) {
+                    var cssmenu = $(this), settings = $.extend({
+                    format: "dropdown",
+                    sticky: false
+                    }, options);
+                    return this.each(function () {
+                    $(this).find(".button").on('click', function () {
+                        $(this).toggleClass('menu-opened');
+                        var mainmenu = $(this).next('ul');
+                        if (mainmenu.hasClass('open')) {
+                        mainmenu.slideToggle().removeClass('open');
+                        }
+                        else {
+                        mainmenu.slideToggle().addClass('open');
+                        if (settings.format === "dropdown") {
+                            mainmenu.find('ul').show();
+                        }
+                        }
+                    });
+                    cssmenu.find('li ul').parent().addClass('has-sub');
+                    multiTg = function () {
+                        cssmenu.find(".has-sub").prepend('<span class="submenu-button"></span>');
+                        cssmenu.find('.submenu-button').on('click', function () {
+                        $(this).toggleClass('submenu-opened');
+                        if ($(this).siblings('ul').hasClass('open')) {
+                            $(this).siblings('ul').removeClass('open').slideToggle();
+                        }
+                        else {
+                            $(this).siblings('ul').addClass('open').slideToggle();
+                        }
+                        });
+                    };
+                    if (settings.format === 'multitoggle') multiTg();
+                    else cssmenu.addClass('dropdown');
+                    if (settings.sticky === true) cssmenu.css('position', 'fixed');
+                    resizeFix = function () {
+                        var mediasize = 1217;
+                        if ($(window).width() > mediasize) {
+                        cssmenu.find('ul').show();
+                        }
+                        if ($(window).width() <= mediasize) {
+                        cssmenu.find('ul').hide().removeClass('open');
+                        }
+                    };
+                    resizeFix();
+                    return $(window).on('resize', resizeFix);
+                    });
+                };
+                })(jQuery);
+
+                (function ($) {
+                    $(document).ready(function () {
+                        $("#cssmenu").menumaker({
+                        format: "multitoggle"
+                        });
+                    });
+                })(jQuery);
+
+            </script>
+        </div>
+    
+        <!-- Modal -->
+        <div class="modal right fade" id="myModal3" tabindex="-1" role="dialog" aria-labelledby="myModalLabel2">
+            <div class="modal-dialog" role="document">
+                <div class="modal-content">
+                    <div class="modal-header">
+                        <button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">x</span></button>
+                        <p class="modal-title text-center" id="myModalLabel2" style="font-size:30px; color:#fff; font-weight:500;">Fund This Cause</p>
+                    </div>
+
+                    <div class="modal-body text-center">
+                        <p>Support ORGAN India, an initiative of the Parashar Foundation and help us make a difference in the lives of thousands of people. All money donated to the Parashar Foundation will go towards creating awareness on organ donation. You can download this form and send it along with your cheque to our office </p>
+                        <p>Parashar Foundation </p>
+                        <p>D-119, Defence Colony, New Delhi – 110024  India</p>
+                        <p>Ph: 011-41838382 </p>
+                        <p>Alternatively you may make a direct deposit as per the bank particulars given below. </p>
+                        <div class="col-md-1 mobilenone"></div>
+
+                        <div class="col-md-3">
+                            <p>Name of Bank</p>
+                            <p>HDFC Bank</p>
+                        </div>
+
+                        <div class="col-md-1">
+                            <p style="margin-top: 15px;">|</p>
+                        </div>
+
+                        <div class="col-md-2">
+                            <p>Account No</p>
+                            <p>50100246284551</p>
+                        </div>
+
+                        <div class="col-md-1">
+                            <p style="margin-top:15px;">|</p>
+                        </div>
+
+                        <div class="col-md-3">
+                            <p>IFSC Code</p>
+                            <p>HDFC0000134</p>
+                        </div>
+
+                        <div class="col-md-2  mobilenone"></div>
+                        <p>D-23, Defence Colony, New Delhi - 110024 India</p>
+                        <div class="col-md-3 mobilenone"></div>
+                        <div class="col-md-3"><a href="#"><img src="https://www.organindia.org/wp-content/themes/organindia/images/hdfc.png"></a></div>
+                        <div class="col-md-3">
+                            <a href="https://organindia.org/wp-content/uploads/2014/09/Donation-Form.pdf">
+                                <img class="size-full wp-image-1817 alignnone" src="https://organindia.org/wp-content/uploads/2014/09/download-.png" alt="download-" width="230" height="80" />
+                            </a>
+                        </div>
+                        <div class="col-md-3 mobilenone"></div>
+                        <!-- <div class="col-md-3">
+                            <a href="https://goo.gl/JGCfuT" target="_blank"><img src="https://www.organindia.org/wp-content/themes/organindia/images/bit.png" ></a>
+                        </div> -->
+                        
+                        <!-- <div class="col-md-1"></div> -->
+                    </div>
+                </div>
+                <!-- modal-content -->
+            </div>
+        </div>
+        
+    </div>
+    
+    
+    
+<style>
+	div#social-form h4 {
+		margin-left: -5px;
+		padding: 10px 0px;
+		font-size: 24px;
+		font-family: 'Pathway Gothic One', sans-serif;
+		color: #101010;
+		font-weight: 500;
+	}
+</style>
+
+<div class="page-title">
+    <div class="container">
+        <div class="row">
+            <div class="col-md-12">
+                <h1> Pledge to be an Organ Donor </h1>
+            </div>
+        </div>
+    </div>
+</div>
+
+<div class="container page-container">
+    <div class="row">
+        <div class="col-md-8" id="minwidth">            
+            <div id="donate-form">
+                <form name="dontate-form" id="dontate-form-update" method="post">
+                    <!--action="/donate-card" -->
+                    <div class="row mar-bot-15">
+                        <div class="col-md-12">
+                            <label>Name<span>*</span> ( As it appears on government issued identity card )</label>
+                        </div>
+                        <div class="col-md-4">
+                            <input type="text" name="fristName" id="fristName" value="" size="40" maxlength="100" class="required" aria-required="true" Placeholder="First Name" onkeypress="return onlyAlphabets(this)">
+                        </div>
+                        <div class="col-md-4">
+                            <input type="text" name="middlename" id="middlename" value="" size="40" maxlength="100"  aria-required="true"  Placeholder="Middle Name"  onkeypress="return onlyAlphabets(this)">
+                        </div>
+                        <div class="col-md-4">
+                            <input type="text"  name="lastName" id="lastName" value="" size="40" maxlength="100" aria-required="true"  Placeholder="Last Name"  onkeypress="return onlyAlphabets(this)">
+                        </div>
+                    </div>
+                    <div class="row mar-bot-15">
+                        <div class="col-md-12">
+                            <label>Mother's/Father's Name<span>*</span></label>
+                            <input type="text" name="motherfather_name" Placeholder="Mother's/Father's Name" id="motherfather_name" value="" size="40" maxlength="100" class="required" aria-required="true"  onkeypress="return onlyAlphabets(this)">
+                        </div>
+                    </div>
+                    <div class="row mar-bot-15">
+                        <div class="col-md-12">
+                            <label>Current Residential Address<span>*</span></label>
+                            <textarea name="address" id="address" maxlength="80" class="required" Placeholder="House Number/Flat Number, Society Name"></textarea>
+                        </div>
+                        <div class="col-md-12">
+                            <label>Address Line 2<span>*</span></label>
+                            <textarea name="address1" id="address1" maxlength="80" class="required" Placeholder="Street Address, Landmark"></textarea>
+                        </div>
+                        <div class="col-md-4">
+                            <label>City<span>*</span></label>
+                            <input type="text" name="city" id="city" value="" size="40" maxlength="100" class="required" Placeholder="City" onkeypress="return onlyAlphabets(this)" />
+                        </div>
+                        <div class="col-md-4">
+                            <label>District<span>*</span></label>
+                            <input type="text" name="distric" id="distric" value="" size="40" maxlength="100" class="required" Placeholder="District" onkeypress="return onlyAlphabets(this)" />
+                        </div>
+                        <div class="col-md-4">
+                            <label>State<span>*</span></label>
+                            <input type="text" name="state" id="state" value="" size="40" maxlength="100" class="required" aria-required="true" Placeholder="State" onkeypress="return onlyAlphabets(this)" />
+                        </div>
+                    </div>
+
+                    <div class="row mar-bot-15">
+                        <div class="col-md-4">
+                            <label>PIN Code<span>*</span></label>
+                            <input type="text" Placeholder="PIN Code" name="zip_code" id="zip_code" value="" size="40" maxlength="6" class="required" aria-required="true" onkeypress="return isNumber(event)">
+                        </div>
+                        <div class="col-md-4">
+                            <label>Mobile Number<span>*</span></label>
+                            <input type="text" Placeholder="Mobile Number" name="mobile_no" id="mobile_no" value="" size="40" maxlength="10" class="required" aria-required="true" onkeypress="return isNumber(event)">
+                        </div>
+
+                        <div class="col-md-4">
+                            <label>Occupation<span>*</span></label>
+                            <select types="select" class="selects required" name="workplace" id="workplace">
+                                <option value="">--- Select ---</option>
+                                <option value="Student">Student</option>
+                                <option value="Business">Business</option>
+                                <option value="Professional">Professional</option>
+                                <option value="Self Employed">Self Employed</option>
+                                <option value="Government employee">Government Employee</option>
+                                <option value="Armed forces">Armed Forces</option>
+                                <option value="Retired">Retired</option>
+                                <option value="Home maker">Homemaker</option>
+                                <option value="Other">Other</option>
+                            </select>
+                        </div>
+                    </div>
+
+                    <div class="row mar-bot-15" id="otherfields" style="display:none;">
+                        <div class="col-md-12">
+                            <label>Profession<span>*</span></label>
+                            <input type="text" name="workplace_other" id="workplace_other" value="" size="40" class="required" maxlength="250" aria-required="true" Placeholder="">
+                        </div>
+                    </div>
+                    <div class="row mar-bot-15">
+                        <div class="col-md-4" id="emaillabel">
+                            <label>Email<span>*</span></label>
+                            <input type="email" name="es_email_mail" id="es_email_mail" value="" size="40" class="required error" maxlength="30" aria-required="true" Placeholder="Email">
+                        </div>
+                        <div class="col-md-4">
+                            <label>Date Of Birth(DD/MM/YYYY)<span>*</span></label>
+                            <input type="text" name="DateofBirth" id="DateofBirth" value="" size="40" class="required" maxlength="15" aria-required="true" Placeholder="DD/MM/YYYY" onkeypress="return checkDate(event)" >
+                        </div>
+                        <div class="col-md-4" style="display:inline-block;">
+                            <label>Age<span>*</span></label>
+                            <input type="text" name="age" id="age" value="" size="40" class="required" Readonly maxlength="3" aria-required="true" onkeypress="return isNumber(event)" Placeholder="Age">
+                        </div>
+                    </div>
+                    <div class="row mar-bot-15">
+                        <div class="col-md-3">
+                            <label>Gender<span>*</span></label>
+                            <select types="select" class="selects required" id="gender" name="gender">
+                                <option value="">---Select---</option>
+                                <option value="MALE">Male</option>
+                                <option value="FEMALE">Female</option>
+                                <option value="Other">Other</option>
+                            </select>
+                        </div>
+                        <div class="col-md-3">
+                            <label>Blood Group<span>*</span></label>
+                            <select types="select" class="selects required" name="blood_group" id="blood_group">
+                                <option value="">---Select---</option>
+                                <option value="A+">A<sup>+</sup></option>
+                                <option value="A-">A<sup>-</sup></option>
+                                <option value="B+">B<sup>+</sup></option>
+                                <option value="B-">B<sup>-</sup></option>
+                                <option value="AB+">AB<sup>+</sup></option>
+                                <option value="AB-">AB<sup>-</sup></option>
+                                <option value="O+">O<sup>+</sup></option>
+                                <option value="O-">O<sup>-</sup></option>
+                            </select>
+                        </div>
+
+                        <div class="col-md-6">
+                            <label>Emergency Contact Name <span>*</span></label>
+                            <input type="text" name="next_of_kin" id="next_of_kin" maxlength="30" class="required" aria-required="true" Placeholder="Emergency Contact Name"  onkeypress="return onlyAlphabets(this)" >
+                        </div>
+                    </div>
+                    <div class="row mar-bot-15">
+                        <div class="col-md-6">
+                            <label>Emergency Contact Number.<span>*</span></label>
+                            <input type="text" name="kins_phone_no" id="kins_phone_no" Placeholder="Enter Emergency Contact Number" title="Enter Emergency Contact Number" value="" size="40" maxlength="10" class="required" aria-required="true" onkeypress="return isNumber(event)"> 
+                        </div>
+                        <div class="col-md-6">
+                            <label>Emergency Contact Address<span>*</span></label>
+                            <textarea name="emergencycontactaddress" id="emergencycontactaddress" maxlength="1000" class="required" Placeholder="Emergency Contact Address" style="height:37px;"></textarea>
+                            <!-- <input type="checkbox" name="" value="" class="" onclick="return emergencycontact();"> <span style="font-size:12px; color:#000;"> (Person's Address and Emergency Contact's Address is same) </span> -->
+                            <input  type="checkbox" id="checkemcontact" name="checkemcontact" value="" class="" onclick="return emergencycontact(this);" />
+                            <label for="checkemcontact" ><span style="font-size:11px; display: -webkit-inline-box;color:#000;line-height: 16px;">(Person's Address and Emergency Contact's Address is same)</span> </label>
+                        </div>
+                    </div>
+                    <div class="row mar-bot-15">
+                        <div class="col-md-6">
+                            <label> Choose Identity Card <span>*</span></label>
+                            <select name="identitycardname" id="identitycardname" title="Choose Identity Card" class="required selects">
+                                <option value=""> -------Select One ------- </option>
+                                <option value="PAN CARD"> PAN Card </option>
+                                <option value="AADHAR CARD"> Aadhar Card</option>
+                                <option value="VOTER ID"> Voter Id</option>
+                            </select>
+                        </div>
+                        <div class="col-md-6">
+                            <label> Enter Identity Card Number<span>*</span></label>
+                            <input type="text" name="pancard" id="pancard" size="40" maxlength="20" class="required identity" Placeholder="PAN Card">
+                            <input type="text" name="aadhar" id="aadhar" size="40" maxlength="20" class="required identity"  Placeholder="Aadhar Card">
+                            <input type="text" name="voterId" id="voterId" size="40" maxlength="20" class="required identity"  Placeholder="Voter Id">
+                            <input type="text" name="identitycardno" id="identitycardno" value="" size="40" maxlength="20" class="required" Placeholder=" Enter Identity Card Number">
+                        </div>
+                    </div>
+
+                    <div class="row mar-bot-15">
+                        <div class="col-md-12 donate_checkbox">
+                            <label style="padding-top:20px;">Organs that I wish to donate :<span>*</span></label>
+                            <div class="inline" style="position:relative">
+                                <input type="checkbox" name="organ_donate[]" value="All" id="organ_donate1" class="donate-check donorform" />
+                                <label for="organ_donate1" class="labelwish">All Organs</label>
+                                <input type="checkbox" name="organ_donate[]" value="Corneas" id="Corneas" class="donate-check donorform" />
+                                <label for="Corneas" class="labelwish">Corneas (Eyes)</label>
+                                <input type="checkbox" name="organ_donate[]" value="Kidneys" id="Kidneys" class="donate-check donorform" />
+                                <label for="Kidneys" class="labelwish">Kidneys</label>
+                                <input type="checkbox" name="organ_donate[]" value="Heart" id="Heart" class="donate-check donorform" />
+                                <label for="Heart" class="labelwish">Heart</label>
+                                <input type="checkbox" name="organ_donate[]" value="Lungs" id="Lungs" class="donate-check donorform" />
+                                <label for="Lungs" class="labelwish">Lungs</label>
+                                <input type="checkbox" name="organ_donate[]" value="Liver" id="Liver" class="donate-check donorform" />
+                                <label for="Liver" class="labelwish">Liver</label>
+                                <input type="checkbox" name="organ_donate[]" value="Pancreas" id="Pancreas" class="donate-check donorform" />
+                                <label for="Pancreas" class="labelwish">Pancreas</label>
+                                <input type="checkbox" name="organ_donate[]" value="Small Intestine" id="smallintestine" class="donate-check donorform" />
+                                <label for="smallintestine" class="labelwish">Small Intestine </label>
+                                <input type="checkbox" name="organ_donate[]" value="Skin" id="Skin" class="donate-check donorform" />
+                                <label for="Skin" class="labelwish">Skin</label>
+								<input type="checkbox" name="organ_donate[]" value="Hand" id="Hand" class="donate-check donorform" />
+                                <label for="Hand" class="labelwish">Hand</label>
+                                <div class="col-md-12 donate_checkbox all">
+                                    <input type="text" name="organ_donatesty" id="organ_donatesty" class="required disbleds" />
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-md-6">
+                            <label> Social Media Profile Link </label>
+                            <input type="text" name="twitter_profile" id="twitter_profile" maxlength="150" value="" size="40" aria-required="true" Placeholder="Facebook/Instagram/Twitter (Optional)">
+                        </div>
+                        <div class="col-md-6">
+                            <label>Where did you hear about us <span>*</span></label>
+                            <select types="select" class="selects required" name="hear_about_organ" id="hear_about_organ">
+                                <option value="">---Select---</option>
+                                <option value="Civil Hospital Panchkula">Civil Hospital Panchkula</option>
+                                <option value="Galgotia University">Galgotia University</option>
+                                <option value="Reliance General Insurance">Reliance General Insurance</option>
+                                <option value="Social media">Social media</option>
+                                <option value="Awareness session">Awareness session</option>
+                                <option value="Friends and family">Friends and family</option>
+                                <option value="Radio">Radio</option>
+                                <option value="Other">Other</option>
+                            </select>
+                        </div>
+                    </div>
+
+                    <div class="row mar-bot-15" id="awarenesession" style="display:none;">
+                        <div class="col-md-12">
+                            <label>Which Awareness session ? <span>*</span></label>
+                            <input type="text" name="awarenesession" id="awarenesession" value="" size="40" class="required" maxlength="250" aria-required="true" Placeholder="Which Awareness session ?">
+                        </div>
+                    </div>
+                    <div class="row">
+                        <div class="col-md-12 donate_checkbox" style="line-height:18px;margin-top:10px;">
+                            <input type="checkbox" name="above18" value="above18" id="above18">
+                            <label for="above18"> I declare that I am a citizen of India and above 18 years of age. </label>
+                            <input type="text" name="above18s" id="above18s" class="required disbleds" />
+                        </div>
+                    </div>
+                    <div class="row">
+                        <div class="col-md-6 donate_checkbox">
+                            <input type="checkbox" name="privacyPolicy" value="privacyPolicy" id="privacyPolicy">
+                            <label for="privacyPolicy">I agree to the privacy policy &nbsp;<a href="https://www.organindia.org/privacy-policy/" target="_blank" class="readm">Read More</a> </label>
+                            <input type="text" name="Iaggree" id="Iaggree" class="required disbleds" />                        </div>
+                    </div>
+
+                    <div class="row">
+                        <div class="col-md-12">
+                            <label style="color: #309d77;font-weight: 500;">Please ensure your email address is correct to receive your donor card.</label>
+                            <input type="submit" value="Next" id="submit" name="submit" class="btn-submit" onclick="return validation(this)">
+<!--                             <img class="ajax-loader" src="https://www.organindia.org/wp-content/themes/organindia/images/ajax-loader.gif" alt="Sending ..." style="visibility: hidden; opacity: 1;">  -->
+                        </div>
+                        <div class="col-md-6">
+                            <div class="thanks"></div>
+                        </div>
+                    </div>
+                    <div class="row mar-bot-15">
+                        <div class="col-md-12">
+                            <div class="thanks">
+                            </div>
+                        </div>
+                    </div>
+                </form>
+            </div>
+            <div class="row" id="thanks_next">
+                <form name="dontateFsubmit" id="dontateFsubmit" method="post">
+                    <div class="col-md-12">
+                            <p><strong>Congratulations for opting to be an Organ Donor!</strong></p>
+                            <p>ORGAN India has <strong>gone green!</strong></p>
+                            <p>In order to reduce our carbon footprint, and to conserve and protect natural resources for future generations, we are issuing only e-donor cards.
+                                You will receive your e-donor card with a unique Government registration number, an e-certificate, and an informational pamphlet,
+                                on the provided email address within 4 weeks. Please check your inbox/spam folder for our email. You may take a printout of the same if you wish.
+                            </p>
+                            <div class="row">
+                                <input type="hidden" id="validUser" name="validUser" />
+                                <input type="text" id="cardType" name="cardType" class="required disbleds" value = "1"/>
+                            </div>
+                            <div class="col-md-12">
+                                <p class="ErrorMsg"></p>
+                                <input type="submit" value="Submit" class="btn-submit" id="final-sub" name="fsubmit" >
+                            </div>
+                        </div>
+                </form>
+            </div>
+        </div>
+    <div class="col-md-4" id="organ-sidebar">
+    <div class="sidebar_bottom">
+       	<div class="row">
+		    <div class="col-md-12">
+                                        <!--<div class="overview-block" style="margin-bottom:50px;">                   
+                    					
+					</div>-->
+                                                                 </div>
+
+		    		                    <h3 style="text-align: center;font-size: 28px; margin-bottom: 20px;"> Sonu Nigam&#8217;s Pledge </h3>
+			    <div class="col-md-12">
+                    <div class="overview-block" style="margin-bottom:50px;">
+                        <img src="https://www.organindia.org/wp-content/uploads/2017/12/sonu-nigam-pledge.jpg" class="img-responsive" alt="" style="padding:0" />
+                       <p></p>
+                        <a href="
+                        https://www.organindia.org/celebrity/sonu-nigams-pledge/                           " class="more-details">
+                            View
+                        </a>
+                    </div>
+                </div>
+            
+            <!--<div class="col-md-12">
+                <div class="overview-block">
+                    <img src="http://www.organindia.org/wp-content/uploads/2015/10/go-togeather.png" alt="Transplant  Guide" class="img-responsive" style="max-width:75%" width="270" height="231" />
+                    <h3> Pledge Your Organs </h3>
+                    <p>   Become A Donor And Claim Your Donor Card</p>
+                    <a href="http://www.organindia.org/claim-your-donor-card/" class="more-details">Details</a>
+                </div>
+            </div>
+        	<div class="col-md-12">
+		        <div class="overview-block">
+                    <img src="https://www.organindia.org/wp-content/uploads/2015/05/transplant.png" alt="Transplant  Guide" class="img-responsive" style="max-width:75%" />
+                    <h3>Transplant  Guide   </h3>
+                    <p>Need an organ transplant & don't know where to start? Here's a directory of transplant hospitals, doctors & coordinators across India, along with places to stay, labs, chemists, taxis & other facilities where you need to go.</p>
+                    <a href="https://www.organindia.org/transplant-guide-directory/" class="more-details"> Details </a>
+		        </div>
+            </div> -->
+
+            			    <div class="col-md-12">
+                    <div class="overview-block" >
+                        <img src="https://www.organindia.org/wp-content/uploads/2014/03/brain.png" class="img-responsive" alt="organ donation and brain death" style="max-width:75%" />
+                        <h3>What Is Organ Donation</h3>
+                        <p>Organ donation is the process of donating organs or biological tissue to a living recipient, who is in need of a transplant. What is brain death? And how is it related to organ donation? Everything you need to know and more</p>
+                        <a href="https://www.organindia.org/overviews/know-organ-donation/" class="more-details">Details</a>
+                    </div>
+                </div>
+
+            			    <div class="col-md-12">
+                    <div class="overview-block" >
+                        <img src="https://www.organindia.org/wp-content/uploads/2014/06/body-donation.png" class="img-responsive" alt="body donation after death" style="max-width:75%" />
+                        <h3>Body Donation Directory</h3>
+                        <p>Do you know that in India you can donate your whole body after death for medical research and education? Click below for information on organisations and medical institutions in your area where you can donate a body.</p>
+                        <a href="https://www.organindia.org/overviews/body-donation-directory/" class="more-details">Details</a>
+                    </div>
+                </div>
+
+            			    <div class="col-md-12">
+                    <div class="overview-block" >
+                        <img src="https://www.organindia.org/wp-content/uploads/2014/06/save.png" class="img-responsive" alt="organ donation awareness in india" style="max-width:75%" />
+                        <h3>Organ Donation Awareness</h3>
+                        <p>Now YOU can help raise awareness on organ donation at your organisation, college, school, RWA or anywhere else.</p>
+                        <a href="https://www.organindia.org/overviews/donation-program/" class="more-details">Details</a>
+                    </div>
+                </div>
+
+            
+        </div>
+    </div>
+
+    <div class="quicklink" style="">
+        <h3>Quick Links</h3>
+        
+        <ul class="">
+            <li><a href='https://organindia.org/'>Home</a></li>
+
+            <li><a href='https://www.organindia.org/transplant-guide-directory/'>Organ Transplant Guide</a></li>
+
+            <li><a href='https://www.organindia.org/overviews/know-organ-donation/'>About Organ Donation</a></li>
+
+            <li><a href='https://www.organindia.org/overviews/body-donation-directory/'>Body Donation Directory</a></li>
+
+            <li><a href='https://www.organindia.org/overviews/donation-program/'>Donation Awareness Program</a></li>
+
+            <li><a href='https://www.organindia.org/laws-made-easy/'>Organ Transplant Laws</a></li>
+
+            <li><a href='https://www.organindia.org/become-a-volunteer/'>Become A Donor</a></li>
+
+            <li><a href='https://www.organindia.org/claim-your-donor-card/'>Pledge Your Organs</a></li>
+
+            <li>
+                <a href="#" title="Organ-specific information">Organ-specific information</a>
+                <ul id="accordion1">
+
+                    <li>
+                        <a data-toggle="collapse" data-parent="#accordion1" href="#firstLink"  title="Liver">Liver </a>
+                        <ul id="firstLink" class="collapse">
+                            <li><a href="https://www.organindia.org/the-liver-and-liver-disease/"  title="The Liver and Liver Disease">The Liver and Liver Disease</a></li>
+                            <li><a href="https://www.organindia.org/diagnosis-and-pre-transplant/"  title="Diagnosis and Pre-transplant">Diagnosis and Pre-transplant</a></li>
+                            <li><a href="https://www.organindia.org/recipient-evaluation-and-preparation/" title="Recipient Evaluation and Preparation">Recipient Evaluation and Preparation</a></li>
+                            <li><a href="https://www.organindia.org/donor-evaluation-and-preparation/" title="Donor Evaluation and Preparation">Donor Evaluation and Preparation</a></li>
+                            <li><a href="https://www.organindia.org/approaching-the-transplant/" title="Approaching the Transplant">Approaching the Transplant</a></li>
+                            <li><a href="https://www.organindia.org/post-transplant-care/" title="Post-transplant Care">Post-transplant Care</a></li>
+                        </ul>
+                    </li>
+
+                    <li>
+                        <a data-toggle="collapse" data-parent="#accordion1" href="#firstLink1" title="Heart">Heart </a>
+                        <ul id="firstLink1" class="collapse">
+                            <li><a href="https://www.organindia.org/registering-the-stressful-wait-preparation/" title="Registering, The Stressful Wait, Preparation">Registering, The Stressful Wait, Preparation</a></li>
+                            <li><a href="https://www.organindia.org/rejection-infections/" title="Rejection &amp; Infections">Rejection &amp; Infections</a></li>
+                            <li><a href="https://www.organindia.org/7-things-you-need-to-know-post-transplant/" title="Things You Need to Know Post Transplant">Things You Need to Know Post Transplant</a></li>
+                            <li><a href="https://www.organindia.org/heart-transplant/" title="Heart Transplant">Heart Transplant</a></li>
+                            <li><a href="https://www.organindia.org/the-transplant-heart/" title="The Transplant">The Transplant</a></li>
+                            <li><a href="https://www.organindia.org/going-back-home-dos-donts/" title="Going Back Home Dos &amp; Donts">Going Back Home Dos &amp; Donts</a></li>
+                            <li><a href="https://www.organindia.org/post-transplant-care-heart/" title="Post Transplant Care">Post Transplant Care</a></li>
+                        </ul>
+                    </li>
+
+                    <li>
+                        <a data-toggle="collapse" data-parent="#accordion1" href="#firstLink2" title="Kidney">Kidney </a>
+                        <ul id="firstLink2" class="collapse">
+                            <li><a href="https://www.organindia.org/pre-transplant-recipient-patient-evaluation/" title="Pre-transplant recipient (patient) evaluation">Pre-transplant recipient (patient) evaluation</a></li>
+                            <li><a href="https://www.organindia.org/transplant-surgery/" title="Transplant surgery">Transplant surgery</a></li>
+                            <li><a href="https://www.organindia.org/post-transplant-care-2/" title="Post-transplant care">Post-transplant care</a></li>
+                            <li><a href="https://www.organindia.org/the-kidneys/" title="The Kidneys">The Kidneys</a></li>
+                            <li><a href="https://www.organindia.org/kidney-diseases/" title="Kidney Diseases">Kidney Diseases</a></li>
+                            <li><a href="https://www.organindia.org/recipient-preparation-and-evaluation/" title="Recipient preparation and evaluation">Recipient preparation and evaluation</a></li>
+                        </ul>
+                    </li>
+
+                    <li>
+                        <a data-toggle="collapse" data-parent="#accordion1" href="#firstLink3" title="Lungs">Lungs </a>
+                        <ul id="firstLink3" class="collapse">
+                            <li><a href="https://www.organindia.org/lungs/lung-transplant/" title="Lung Transplant">Lung Transplant</a></li>
+                            <li><a href="https://www.organindia.org/lungs/reasons-transplantation/" title="Reasons For Transplantation">Reasons For Transplantation</a></li>
+                            <li><a href="https://www.organindia.org/lungs/lung-transplant-evaluation-allocation-scoring-matching/" title="Lung Transplant Evaluation, Allocation, Scoring &amp; Matching">Lung Transplant Evaluation, Allocation, Scoring &amp; Matching</a></li>
+                            <li><a href="https://www.organindia.org/lungs/waiting-organ-donor/" title="Waiting For An Organ Donor">Waiting For An Organ Donor</a></li>
+                            <li><a href="https://www.organindia.org/lungs/getting-call/" title="Getting The Call">Getting The Call</a></li>
+                            <li><a href="https://www.organindia.org/lungs/lung-transplant-operation-post-operative-stay/" title="The Lung Transplant Operation &amp; Post-Operative Stay">The Lung Transplant Operation &amp; Post-Operative Stay</a></li>
+                            <li><a href="https://www.organindia.org/lungs/living-new-lungs-rejections-infections/" title="Living With New Lungs Rejections &amp; Infections">Living With New Lungs Rejections &amp; Infections</a></li>
+                            <li><a href="https://www.organindia.org/lungs/things-must-know-lung-transplant/" title="Things You MUST Know After a Lung Transplant">Things You MUST Know After a Lung Transplant</a></li>
+                            <li><a href="https://www.organindia.org/lungs/clinic-visits-studies/" title="Clinic Visits &amp; Studies">Clinic Visits &amp; Studies</a></li>
+                        </ul>
+                    </li>
+
+                    
+                </ul>
+            </li>
+                
+        </ul>
+    </div>
+
+	<!-- <div class="sidebar">
+    <div class="widget"><h4 class="widget-title"><span>Quick links</span></h4><div class="menu-mega-menu-container"><ul id="menu-mega-menu" class="menu"><li id="menu-item-1583" class="menu-item menu-item-type-custom menu-item-object-custom menu-item-1583"><a href="http://organindia.org/">Home</a></li>
+<li id="menu-item-56434" class="menu-item menu-item-type-custom menu-item-object-custom menu-item-has-children menu-item-56434"><a href="#">About Us</a>
+<ul class="sub-menu">
+	<li id="menu-item-56435" class="menu-item menu-item-type-custom menu-item-object-custom menu-item-has-children menu-item-56435"><a href="#">WHO WE ARE</a>
+	<ul class="sub-menu">
+		<li id="menu-item-56418" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-56418"><a href="https://www.organindia.org/about-us/our-history/">OUR HISTORY</a></li>
+		<li id="menu-item-57177" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-57177"><a href="https://www.organindia.org/about-us/our-mission/">OUR MISSION</a></li>
+		<li id="menu-item-57175" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-57175"><a href="https://www.organindia.org/about-us/our-mission/">OUR MISSION</a></li>
+		<li id="menu-item-56417" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-56417"><a href="https://www.organindia.org/about-us/our-team/">OUR TEAM</a></li>
+		<li id="menu-item-56416" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-56416"><a href="https://www.organindia.org/about-us/our-trustees/">OUR TRUSTEES</a></li>
+		<li id="menu-item-57178" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-57178"><a href="https://www.organindia.org/about-us/legal-financial-information/">LEGAL &#038; FINANCIAL INFORMATION</a></li>
+		<li id="menu-item-57009" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-57009"><a href="https://www.organindia.org/about-us/awards-accreditation/">ACCREDITATION &#038; AWARDS</a></li>
+		<li id="menu-item-57217" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-57217"><a href="https://www.organindia.org/about-us/our-network/">OUR NETWORK</a></li>
+		<li id="menu-item-56425" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-56425"><a href="https://www.organindia.org/about-us/annual-reports/">ANNUAL REPORTS</a></li>
+	</ul>
+</li>
+	<li id="menu-item-56457" class="menu-item menu-item-type-custom menu-item-object-custom menu-item-has-children menu-item-56457"><a href="#">WHAT WE DO</a>
+	<ul class="sub-menu">
+		<li id="menu-item-56458" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-56458"><a href="https://www.organindia.org/about-us/research/">RESEARCH</a></li>
+	</ul>
+</li>
+	<li id="menu-item-56424" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-56424"><a href="https://www.organindia.org/contact-us/">Contact Us</a></li>
+</ul>
+</li>
+<li id="menu-item-1584" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-1584"><a href="https://www.organindia.org/about-us/">About Us</a></li>
+<li id="menu-item-2284" class="menu-item menu-item-type-custom menu-item-object-custom current-menu-ancestor current-menu-parent menu-item-has-children menu-item-2284"><a href="#">Understanding Organ Donation</a>
+<ul class="sub-menu">
+	<li id="menu-item-1591" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-1591"><a href="https://www.organindia.org/all-about-organ-donation/">All About Organ Donations</a></li>
+	<li id="menu-item-1882" class="menu-item menu-item-type-custom menu-item-object-custom menu-item-has-children menu-item-1882"><a href="#">A Primer on ‘Brain Death’</a>
+	<ul class="sub-menu">
+		<li id="menu-item-1883" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-1883"><a href="https://www.organindia.org/diagnosing-and-maintenance-of-brain-death-all-you-need-to-know/">DIAGNOSING AND MAINTENANCE OF BRAIN DEATH – ALL YOU NEED TO KNOW</a></li>
+		<li id="menu-item-1592" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-1592"><a href="https://www.organindia.org/what-is-brain-death/">BRAIN DEATH – YOUR QUESTIONS ANSWERED</a></li>
+	</ul>
+</li>
+	<li id="menu-item-1593" class="menu-item menu-item-type-custom menu-item-object-custom menu-item-has-children menu-item-1593"><a href="#">Organ-specific information</a>
+	<ul class="sub-menu">
+		<li id="menu-item-1614" class="menu-item menu-item-type-custom menu-item-object-custom menu-item-has-children menu-item-1614"><a href="#">Liver</a>
+		<ul class="sub-menu">
+			<li id="menu-item-1682" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-1682"><a href="https://www.organindia.org/diagnosis-and-pre-transplant/">Diagnosis and Pre-transplant</a></li>
+			<li id="menu-item-1666" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-1666"><a href="https://www.organindia.org/the-liver-transplant-and-liver-disease/">Liver Transplant and Liver Disease</a></li>
+			<li id="menu-item-1681" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-1681"><a href="https://www.organindia.org/recipient-evaluation-and-preparation/">Recipient Evaluation and Preparation</a></li>
+			<li id="menu-item-1680" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-1680"><a href="https://www.organindia.org/donor-evaluation-and-preparation/">Liver Donor Evaluation and Preparation</a></li>
+			<li id="menu-item-1679" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-1679"><a href="https://www.organindia.org/approaching-the-transplant/">Approaching Liver Transplant</a></li>
+			<li id="menu-item-1678" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-1678"><a href="https://www.organindia.org/post-transplant-care/">Post-transplant Care</a></li>
+		</ul>
+</li>
+		<li id="menu-item-2293" class="menu-item menu-item-type-custom menu-item-object-custom menu-item-has-children menu-item-2293"><a href="#">Kidney</a>
+		<ul class="sub-menu">
+			<li id="menu-item-2286" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-2286"><a href="https://www.organindia.org/kidney-diseases/">Kidney Diseases</a></li>
+			<li id="menu-item-2290" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-2290"><a href="https://www.organindia.org/kidney-transplant-recipient-preparation-and-evaluation/">Kidney Transplant &#8211; Recipient preparation and evaluation</a></li>
+			<li id="menu-item-2289" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-2289"><a href="https://www.organindia.org/pre-transplant-recipient-patient-evaluation/">Pre-transplant recipient (patient) evaluation</a></li>
+			<li id="menu-item-2292" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-2292"><a href="https://www.organindia.org/kidney-transplant-surgery-procedure/">Kidney Transplant Surgery and Procedure</a></li>
+			<li id="menu-item-2288" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-2288"><a href="https://www.organindia.org/post-transplant-care-2/">Post-transplant care</a></li>
+			<li id="menu-item-2291" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-2291"><a href="https://www.organindia.org/the-kidneys/">The Kidneys</a></li>
+		</ul>
+</li>
+		<li id="menu-item-1597" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-has-children menu-item-1597"><a href="https://www.organindia.org/heart/">Heart</a>
+		<ul class="sub-menu">
+			<li id="menu-item-2496" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-2496"><a href="https://www.organindia.org/heart-transplant/">Heart Transplant</a></li>
+			<li id="menu-item-2494" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-2494"><a href="https://www.organindia.org/the-heart-transplant/">The Heart Transplant</a></li>
+			<li id="menu-item-2492" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-2492"><a href="https://www.organindia.org/rejection-infections/">Rejection &#038; Infections</a></li>
+			<li id="menu-item-2495" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-2495"><a href="https://www.organindia.org/registering-the-stressful-wait-preparation/">Registering, The Stressful Wait, Preparation</a></li>
+			<li id="menu-item-2491" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-2491"><a href="https://www.organindia.org/going-back-home-dos-donts/">Going Back Home – Do’s &#038; Don’ts</a></li>
+			<li id="menu-item-2490" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-2490"><a href="https://www.organindia.org/7-things-you-need-to-know-post-transplant/">Things You Need to Know Post Transplant</a></li>
+			<li id="menu-item-2493" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-2493"><a href="https://www.organindia.org/post-transplant-care-heart/">Post Transplant Care</a></li>
+		</ul>
+</li>
+		<li id="menu-item-1596" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-has-children menu-item-1596"><a title=" " href="https://www.organindia.org/lungs/">Lungs</a>
+		<ul class="sub-menu">
+			<li id="menu-item-3067" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-3067"><a href="https://www.organindia.org/lungs/lung-transplant/">Lung Transplant</a></li>
+			<li id="menu-item-3066" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-3066"><a href="https://www.organindia.org/lungs/reasons-transplantation/">Reasons For Transplantation</a></li>
+			<li id="menu-item-3088" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-3088"><a href="https://www.organindia.org/lungs/lung-transplant-evaluation-allocation-scoring-matching/">Lung Transplant Evaluation, Allocation, Scoring &#038; Matching</a></li>
+			<li id="menu-item-3082" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-3082"><a href="https://www.organindia.org/lungs/waiting-organ-donor/">Waiting For An Organ Donor</a></li>
+			<li id="menu-item-3083" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-3083"><a href="https://www.organindia.org/lungs/getting-call/">Getting The Call</a></li>
+			<li id="menu-item-3084" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-3084"><a href="https://www.organindia.org/lungs/lung-transplant-operation-post-operative-stay/">The Lung Transplant Operation &#038; Post-Operative Stay</a></li>
+			<li id="menu-item-3085" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-3085"><a href="https://www.organindia.org/lungs/living-new-lungs-rejections-infections/">Living With New Lungs – Rejections &#038; Infections</a></li>
+			<li id="menu-item-3086" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-3086"><a href="https://www.organindia.org/lungs/things-must-know-lung-transplant/">Things You MUST Know After a Lung Transplant</a></li>
+			<li id="menu-item-3139" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-3139"><a href="https://www.organindia.org/lungs/clinic-visits-studies/">Clinic Visits &#038; Studies</a></li>
+		</ul>
+</li>
+		<li id="menu-item-1595" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-1595"><a href="https://www.organindia.org/intestines/">Intestines</a></li>
+		<li id="menu-item-1594" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-1594"><a href="https://www.organindia.org/pancreas/">Pancreas Transplant in India</a></li>
+	</ul>
+</li>
+	<li id="menu-item-57797" class="menu-item menu-item-type-custom menu-item-object-custom menu-item-57797"><a href="http://www.organindia.org/wp-content/uploads/2018/07/deceased-donation-data-11-7-18.pdf">Deceased Organ Donors</a></li>
+	<li id="menu-item-1710" class="menu-item menu-item-type-custom menu-item-object-custom menu-item-1710"><a href="http://organindia.org/tissue-and-body-donation/">Eye, Skin &#038; Other Tissues</a></li>
+	<li id="menu-item-2060" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-2060"><a href="https://www.organindia.org/myths-and-facts/">Organ Donation Myths and Facts</a></li>
+	<li id="menu-item-2154" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-2154"><a href="https://www.organindia.org/16-things-to-know-about-organ-donation/">16 things to know about organ donation</a></li>
+	<li id="menu-item-1816" class="menu-item menu-item-type-post_type menu-item-object-page current-menu-item page_item page-item-1465 current_page_item menu-item-1816"><a href="https://www.organindia.org/claim-your-donor-card/" aria-current="page">Apply for your donor card</a></li>
+</ul>
+</li>
+<li id="menu-item-1586" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-1586"><a href="https://www.organindia.org/pledge-to-be-an-organ-donor/">Pledge to be an Organ Donor</a></li>
+<li id="menu-item-2378" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-has-children menu-item-2378"><a href="https://www.organindia.org/information-for-recipients/">Information for Recipients</a>
+<ul class="sub-menu">
+	<li id="menu-item-1692" class="menu-item menu-item-type-custom menu-item-object-custom menu-item-has-children menu-item-1692"><a href="#">Organ-specific information</a>
+	<ul class="sub-menu">
+		<li id="menu-item-1696" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-has-children menu-item-1696"><a href="https://www.organindia.org/liver/">Liver</a>
+		<ul class="sub-menu">
+			<li id="menu-item-1699" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-1699"><a href="https://www.organindia.org/the-liver-transplant-and-liver-disease/">Liver Transplant and Liver Disease</a></li>
+			<li id="menu-item-1694" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-1694"><a href="https://www.organindia.org/diagnosis-and-pre-transplant/">Diagnosis and Pre-transplant</a></li>
+			<li id="menu-item-1695" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-1695"><a href="https://www.organindia.org/donor-evaluation-and-preparation/">Liver Donor Evaluation and Preparation</a></li>
+			<li id="menu-item-1698" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-1698"><a href="https://www.organindia.org/recipient-evaluation-and-preparation/">Recipient Evaluation and Preparation</a></li>
+			<li id="menu-item-1693" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-1693"><a href="https://www.organindia.org/approaching-the-transplant/">Approaching Liver Transplant</a></li>
+			<li id="menu-item-1697" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-1697"><a href="https://www.organindia.org/post-transplant-care/">Post-transplant Care</a></li>
+		</ul>
+</li>
+		<li id="menu-item-1747" class="menu-item menu-item-type-custom menu-item-object-custom menu-item-has-children menu-item-1747"><a href="#">Kidney</a>
+		<ul class="sub-menu">
+			<li id="menu-item-1769" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-1769"><a href="https://www.organindia.org/pre-transplant-recipient-patient-evaluation/">Pre-transplant recipient (patient) evaluation</a></li>
+			<li id="menu-item-1768" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-1768"><a href="https://www.organindia.org/kidney-transplant-surgery-procedure/">Kidney Transplant Surgery and Procedure</a></li>
+			<li id="menu-item-1767" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-1767"><a href="https://www.organindia.org/post-transplant-care-2/">Post-transplant care</a></li>
+			<li id="menu-item-2176" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-2176"><a href="https://www.organindia.org/the-kidneys/">The Kidneys</a></li>
+			<li id="menu-item-1772" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-1772"><a href="https://www.organindia.org/kidney-diseases/">Kidney Diseases</a></li>
+			<li id="menu-item-1770" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-1770"><a href="https://www.organindia.org/kidney-transplant-recipient-preparation-and-evaluation/">Kidney Transplant &#8211; Recipient preparation and evaluation</a></li>
+		</ul>
+</li>
+		<li id="menu-item-2444" class="menu-item menu-item-type-custom menu-item-object-custom menu-item-has-children menu-item-2444"><a href="#">Heart</a>
+		<ul class="sub-menu">
+			<li id="menu-item-2438" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-2438"><a href="https://www.organindia.org/going-back-home-dos-donts/">Going Back Home – Do’s &#038; Don’ts</a></li>
+			<li id="menu-item-2442" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-2442"><a href="https://www.organindia.org/registering-the-stressful-wait-preparation/">Registering, The Stressful Wait, Preparation</a></li>
+			<li id="menu-item-2440" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-2440"><a href="https://www.organindia.org/post-transplant-care-heart/">Post Transplant Care</a></li>
+			<li id="menu-item-2439" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-2439"><a href="https://www.organindia.org/rejection-infections/">Rejection &#038; Infections</a></li>
+			<li id="menu-item-2437" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-2437"><a href="https://www.organindia.org/7-things-you-need-to-know-post-transplant/">Things You Need to Know Post Transplant</a></li>
+			<li id="menu-item-2443" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-2443"><a href="https://www.organindia.org/heart-transplant/">Heart Transplant</a></li>
+			<li id="menu-item-2441" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-2441"><a href="https://www.organindia.org/the-heart-transplant/">The Heart Transplant</a></li>
+		</ul>
+</li>
+		<li id="menu-item-1708" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-has-children menu-item-1708"><a href="https://www.organindia.org/lungs/">Lungs</a>
+		<ul class="sub-menu">
+			<li id="menu-item-55270" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-55270"><a href="https://www.organindia.org/lungs/lung-transplant/">Lung Transplant</a></li>
+			<li id="menu-item-55271" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-55271"><a href="https://www.organindia.org/lungs/reasons-transplantation/">Reasons For Transplantation</a></li>
+			<li id="menu-item-55272" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-55272"><a href="https://www.organindia.org/lungs/lung-transplant-evaluation-allocation-scoring-matching/">Lung Transplant Evaluation, Allocation, Scoring &#038; Matching</a></li>
+			<li id="menu-item-55273" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-55273"><a href="https://www.organindia.org/lungs/waiting-organ-donor/">Waiting For An Organ Donor</a></li>
+			<li id="menu-item-55274" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-55274"><a href="https://www.organindia.org/lungs/getting-call/">Getting The Call</a></li>
+			<li id="menu-item-55275" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-55275"><a href="https://www.organindia.org/lungs/lung-transplant-operation-post-operative-stay/">The Lung Transplant Operation &#038; Post-Operative Stay</a></li>
+			<li id="menu-item-55279" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-55279"><a href="https://www.organindia.org/lungs/living-new-lungs-rejections-infections/">Living With New Lungs – Rejections &#038; Infections</a></li>
+			<li id="menu-item-55282" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-55282"><a href="https://www.organindia.org/lungs/things-must-know-lung-transplant/">Things You MUST Know After a Lung Transplant</a></li>
+			<li id="menu-item-55283" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-55283"><a href="https://www.organindia.org/lungs/clinic-visits-studies/">Clinic Visits &#038; Studies</a></li>
+		</ul>
+</li>
+		<li id="menu-item-1706" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-1706"><a href="https://www.organindia.org/intestines/">Intestines</a></li>
+		<li id="menu-item-1709" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-1709"><a href="https://www.organindia.org/pancreas/">Pancreas Transplant in India</a></li>
+	</ul>
+</li>
+	<li id="menu-item-1834" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-1834"><a href="https://www.organindia.org/ngos-in-organ-donation/">Organisations That Can Help You</a></li>
+</ul>
+</li>
+<li id="menu-item-2067" class="menu-item menu-item-type-custom menu-item-object-custom menu-item-has-children menu-item-2067"><a href="#">Research reports</a>
+<ul class="sub-menu">
+	<li id="menu-item-2500" class="menu-item menu-item-type-custom menu-item-object-custom menu-item-2500"><a href="http://organindia.org/wp-content/uploads/2014/11/ORGAN-Research-Report.pdf">Full Research Report</a></li>
+	<li id="menu-item-2111" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-2111"><a href="https://www.organindia.org/synopsis-of-report-a-study-of-the-deceased-organ-donation-environment-in-delhincr/">Synopsis of Report –“A Study of the Deceased Organ Donation Environment in Delhi/NCR”</a></li>
+	<li id="menu-item-2069" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-2069"><a href="https://www.organindia.org/recommendations-future-strategy-action-plan-2/">Recommendations– Future Strategy &#038; Action Plan</a></li>
+</ul>
+</li>
+<li id="menu-item-3172" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-3172"><a href="https://www.organindia.org/support-us/">Support Us</a></li>
+<li id="menu-item-3209" class="menu-item menu-item-type-custom menu-item-object-custom menu-item-3209"><a target="_blank" rel="noopener" href="http://www.organindia.org/ORGAN-DONATION/">Blog</a></li>
+<li id="menu-item-24924" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-24924"><a href="https://www.organindia.org/partners/">Partners</a></li>
+<li id="menu-item-2014" class="menu-item menu-item-type-custom menu-item-object-custom menu-item-2014"><a target="_blank" rel="noopener" href="http://organindia.org/wp-content/uploads/2014/10/1.THOA-ACT-1994.pdf">THOA ACT 1994</a></li>
+<li id="menu-item-2015" class="menu-item menu-item-type-custom menu-item-object-custom menu-item-2015"><a target="_blank" rel="noopener" href="http://organindia.org/wp-content/uploads/2014/10/2.THO-Rules-1995-Original-Rules.pdf">THO Rules 1995</a></li>
+<li id="menu-item-2016" class="menu-item menu-item-type-custom menu-item-object-custom menu-item-2016"><a target="_blank" rel="noopener" href="http://organindia.org/wp-content/uploads/2014/10/3.THOA-amendment-2011.pdf">THOA Amendment 2011</a></li>
+<li id="menu-item-3174" class="menu-item menu-item-type-custom menu-item-object-custom menu-item-3174"><a target="_blank" rel="noopener" href="http://www.organindia.org/wp-content/uploads/2014/10/4.THOA-amended-ACT-2011.pdf">THOA Amended ACT 2011</a></li>
+<li id="menu-item-3175" class="menu-item menu-item-type-custom menu-item-object-custom menu-item-3175"><a target="_blank" rel="noopener" href="http://www.organindia.org/wp-content/uploads/2014/10/5.THOA-Rules-2014.pdf">THOA Rules 2014</a></li>
+<li id="menu-item-3176" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-3176"><a href="https://www.organindia.org/organ-transplant-laws-made-easy/">Organ Transplantation Laws &#038; Rules</a></li>
+</ul></div></div>	
+	</div> -->
+</div>
+
+
+<style>
+    .menu-item-1584{display:none !important;}
+    .quicklink {margin:0 15px;}
+    .quicklink ul {padding-left:18px;}
+    .quicklink ul li a, .quicklink ul li {font-size:16px;}
+    .quicklink ul li {line-height:32px;}
+</style>    </div>
+</div>
+<link href="https://www.organindia.org/wp-content/themes/organindia/css/donor-card-update.css" rel="stylesheet">
+<script src="https://www.organindia.org/wp-content/themes/organindia/js/donarupdate.js"></script>
+
+<div id="footer">
+
+<div class="container">
+
+<div class="row text-center">
+<p class="footer-tagline"><a href="https://www.organindia.org/terms-and-conditions/">Terms and Conditions</a> | <a href="https://www.organindia.org/privacy-policy/">Privacy Policy</a></p>
+<p class="footer-tagline">&copy; 2015 Parashar Foundation. All Rights Reserved</p>
+</div>
+
+</div>
+
+</div>
+
+<style>
+ html {padding-top:0 !important;}
+#footer a:hover{color:rgb(37,62,129);}
+#wprmenu_bar{display:none!important;}
+</style>
+
+<script type='text/javascript' src='https://www.organindia.org/wp-includes/js/dist/vendor/wp-polyfill.min.js?ver=7.4.4' id='wp-polyfill-js'></script>
+<script type='text/javascript' id='wp-polyfill-js-after'>
+( 'fetch' in window ) || document.write( '<script src="https://www.organindia.org/wp-includes/js/dist/vendor/wp-polyfill-fetch.min.js?ver=3.0.0"></scr' + 'ipt>' );( document.contains ) || document.write( '<script src="https://www.organindia.org/wp-includes/js/dist/vendor/wp-polyfill-node-contains.min.js?ver=3.42.0"></scr' + 'ipt>' );( window.DOMRect ) || document.write( '<script src="https://www.organindia.org/wp-includes/js/dist/vendor/wp-polyfill-dom-rect.min.js?ver=3.42.0"></scr' + 'ipt>' );( window.URL && window.URL.prototype && window.URLSearchParams ) || document.write( '<script src="https://www.organindia.org/wp-includes/js/dist/vendor/wp-polyfill-url.min.js?ver=3.6.4"></scr' + 'ipt>' );( window.FormData && window.FormData.prototype.keys ) || document.write( '<script src="https://www.organindia.org/wp-includes/js/dist/vendor/wp-polyfill-formdata.min.js?ver=3.0.12"></scr' + 'ipt>' );( Element.prototype.matches && Element.prototype.closest ) || document.write( '<script src="https://www.organindia.org/wp-includes/js/dist/vendor/wp-polyfill-element-closest.min.js?ver=2.0.2"></scr' + 'ipt>' );
+</script>
+<script type='text/javascript' id='contact-form-7-js-extra'>
+/* <![CDATA[ */
+var wpcf7 = {"api":{"root":"https:\/\/www.organindia.org\/wp-json\/","namespace":"contact-form-7\/v1"},"cached":"1"};
+/* ]]> */
+</script>
+<script type='text/javascript' src='https://www.organindia.org/wp-content/plugins/contact-form-7/includes/js/index.js?ver=5.4.2' id='contact-form-7-js'></script>
+<script type='text/javascript' src='https://www.organindia.org/wp-content/plugins/superfish/js/superfish.js?ver=1.7.3' id='superfish-js'></script>
+<script type='text/javascript' src='https://www.organindia.org/wp-content/plugins/superfish/js/superfish_args.js?ver=1.7.3' id='superfish-args-js'></script>
+<script type='text/javascript' src='https://www.organindia.org/wp-includes/js/wp-embed.min.js?ver=5.6.13' id='wp-embed-js'></script>
+	
+
+
+
+<script type="text/javascript">
+
+/* <![CDATA[ */
+
+// var google_conversion_id = 966578858;
+
+// var google_custom_params = window.google_tag_params;
+
+// var google_remarketing_only = true;
+
+/* ]]> */
+
+</script>
+
+<script type="text/javascript" src="https://www.googleadservices.com/pagead/conversion.js"></script>
+
+<!-- <noscript>
+
+	<div style="display:inline;">
+
+		<img height="1" width="1" style="border-style:none;" alt="" src="https://googleads.g.doubleclick.net/pagead/viewthroughconversion/966578858/?value=0&amp;guid=ON&amp;script=0"/>
+
+	</div>
+
+</noscript> -->
+
+<script>
+setTimeout(function(){ $("#wprmenu_menu").remove(); }, 1000);
+$('#downscroll').on('click', function (e) {
+        e.preventDefault();
+        $('html, body').animate({ scrollTop: $($(this).attr('href')).offset().top - 140 }, 500, 'linear');
+ });
+ var windowW=$(window).width();
+ if(parseInt(windowW)<1201){
+	 $("#iframe-blog").removeAttr("scrolling");
+	 $("#iframe-blog").attr("src","https://www.organindia.org/ORGAN-DONATION/recent-blog-2.php");
+		$("#iframe-blog").css({"border":"0px"});
+ }else{
+	$("#iframe-blog").attr({"src":"https://www.organindia.org/ORGAN-DONATION/recent-blog-2.php","scrolling":"no"});
+	$("#iframe-blog").css({"width":"100%","height":"545px","border":"0px"});
+ }
+ $(window).resize(function(){
+	var windowW=$(window).width();
+ if(parseInt(windowW)<1201){
+	 $("#iframe-blog").removeAttr("scrolling");
+	 $("#iframe-blog").attr("src","https://www.organindia.org/ORGAN-DONATION/recent-blog-2.php");
+		$("#iframe-blog").css({"border":"0px"});
+ }else{
+	$("#iframe-blog").attr({"src":"https://www.organindia.org/ORGAN-DONATION/recent-blog-2.php","scrolling":"no"});
+	$("#iframe-blog").css({"width":"100%","height":"545px","border":"0px"});
+ }
+ });
+$('.accordion .item .heading').click(function() {
+
+		
+
+	var a = $(this).closest('.item');
+
+	var b = $(a).hasClass('open');
+
+	var c = $(a).closest('.accordion').find('.open');
+
+		
+
+	if(b != true) {
+
+		$(c).find('.content').slideUp(200);
+
+		$(c).removeClass('open');
+
+	}
+
+
+
+	$(a).toggleClass('open');
+
+	$(a).find('.content').slideToggle(200);
+
+
+
+});
+
+</script>
+
+
+
+<script>
+
+function showcity(val)
+
+  {
+
+     var cityval = val;
+
+	 if(cityval=='1')
+
+	  {
+
+	     $("#mumbaicity").show();
+
+		 $("#delhicity").hide();
+
+	  }
+
+	  else if(cityval=='2')
+
+	   {
+
+	      $("#delhicity").show();
+
+	     $("#mumbaicity").hide();
+
+		
+
+	   }
+
+  }
+
+</script>
+
+
+
+</body>
+</html>

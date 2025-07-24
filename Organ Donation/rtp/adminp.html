@@ -1,0 +1,328 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Admin Page</title>
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.4.1/css/all.css">
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            background-color: #f0f0f0;
+            margin: 0;
+            padding: 0;
+            display: flex;
+            flex-direction: column;
+            height: 100vh;
+        }
+
+        .navbar {
+            background-color: #4ba7a7;
+            padding: 10px;
+            text-align: center;
+        }
+
+        .navbar ul {
+            list-style-type: none;
+            padding: 0;
+            margin: 0;
+            overflow: hidden;
+        }
+
+        .navbar li {
+            display: inline-block;
+            margin: 12px 15px;
+        }
+
+        .navbar li a {
+            padding: 10px 20px;
+            text-decoration: none;
+            font-size: 17px;
+            font-weight: 700;
+            color: white;
+            border-radius: 5px;
+            background-color: #4ba7a7;
+        }
+
+        .navbar li a:hover,
+        .navbar li a.active {
+            background-color: #1f2151;
+        }
+
+        .main {
+            display: flex;
+            flex: 1;
+            overflow: hidden;
+        }
+
+        .sidebar {
+            width: 20%;
+            background-color: #1f2151;
+            padding: 20px;
+            border-radius: 0;
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+            color: white;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+        }
+
+        .sidebar button {
+            background-color: #1f2151;
+            color: #afafaf;
+            padding: 10px;
+            border: none;
+            border-radius: 0;
+            cursor: pointer;
+            margin: 10px 0;
+            width: 100%;
+            font-size: large;
+        }
+
+        .sidebar button:hover {
+            background-color: #0d0f4e;
+        }
+
+        .content {
+            width: 80%;
+            margin: 20px;
+            background-color: white;
+            padding: 20px;
+            border-radius: 0;
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+            position: relative;
+            overflow-y: auto;
+        }
+
+        .carousel {
+            width: 100%;
+            height: 590px;
+            background-size: cover;
+            background-position: center;
+            border-radius: 0;
+        }
+
+        form {
+            display: flex;
+            flex-direction: column;
+        }
+
+        form input[type="text"], form input[type="number"], form input[type="email"], form select {
+            padding: 10px;
+            margin: 5px 0;
+            border: 1px solid #ccc;
+            border-radius: 5px;
+            width: calc(100% - 22px);
+        }
+
+        form input[type="submit"] {
+            background-color: #4ba7a7;
+            color: white;
+            padding: 10px;
+            border: none;
+            border-radius: 5px;
+            cursor: pointer;
+        }
+
+        form input[type="submit"]:hover {
+            background-color: #1f2151;
+        }
+
+        .info-section {
+            display: none;
+        }
+
+        table {
+            width: 100%;
+            border-collapse: collapse;
+            margin-top: 20px;
+        }
+
+        th, td {
+            padding: 10px;
+            text-align: left;
+            border-bottom: 1px solid #ddd;
+        }
+
+        th {
+            background-color: #4ba7a7;
+            color: white;
+        }
+
+        .remove-btn {
+            color: red;
+            cursor: pointer;
+        }
+
+        html {
+            scroll-behavior: smooth;
+        }
+    </style>
+</head>
+<body>
+    <header class="navbar">
+        <ul>
+            <li><a href="./Home.html"><i class="fa-duotone fa-memo-pad"></i> HOME</a></li>
+            <li><a href="./user.html"><i class="fa-duotone fa-memo-pad"></i> PATIENT</a></li>
+            <li><a href="./donor.html"><i class="fa-duotone fa-memo-pad"></i> DONOR</a></li>
+            <li><a href="admin.html" class="active">ADMIN</a></li>
+            <li><a href="./FAQ.html"><i class="fa-duotone fa-memo-pad"></i> FAQ'S</a></li>
+            <li><a href="./contact us.html"><i class="fa-duotone fa-memo-pad"></i> CONTACT US</a></li>
+        </ul>
+    </header>
+    <div class="main">
+        <div class="sidebar">
+            <h2>Actions</h2>
+            <button onclick="showSection('addPatient')">Add Patient</button>
+            <button onclick="showSection('addDonor')">Add Donor</button>
+            <button onclick="showSection('viewPatient')">View Patients</button>
+            <button onclick="showSection('viewDonor')">View Donors</button>
+            <button onclick="logout()">Logout</button>
+        </div>
+
+        <div class="content">
+            <div id="carousel" class="carousel"></div>
+
+            <div id="addPatient" class="info-section">
+                <h3>Add Patient</h3>
+                <form id="addPatientForm">
+                    <input type="text" id="patientName" placeholder="Full Name" required>
+                    <input type="number" id="patientAge" placeholder="Age" required>
+                    <input type="text" id="patientGender" placeholder="Gender" required>
+                    <input type="text" id="patientAddress" placeholder="Address" required>
+                    <input type="text" id="patientBloodGroup" placeholder="Blood Group" required>
+                    <input type="email" id="patientEmail" placeholder="Email" required>
+                    <input type="text" id="patientOrgan" placeholder="Organ Required" required>
+                    <input type="number" id="patientTimeRequired" placeholder="Time Required (days)" required>
+                    <input type="submit" value="Add Patient">
+                </form>
+            </div>
+
+            <div id="addDonor" class="info-section">
+                <h3>Add Donor</h3>
+                <form id="addDonorForm">
+                    <input type="text" id="donorName" placeholder="Full Name" required>
+                    <input type="number" id="donorAge" placeholder="Age" required>
+                    <input type="text" id="donorGender" placeholder="Gender" required>
+                    <input type="text" id="donorAddress" placeholder="Address" required>
+                    <input type="text" id="donorBloodGroup" placeholder="Blood Group" required>
+                    <input type="email" id="donorEmail" placeholder="Email" required>
+                    <input type="text" id="donorOrgan" placeholder="Organ Donated" required>
+                    <input type="submit" value="Add Donor">
+                </form>
+            </div>
+
+            <div id="viewPatient" class="info-section">
+                <h3>Patient List</h3>
+                <table id="patientTable">
+                    <tr>
+                        <th>Name</th>
+                        <th>Age</th>
+                        <th>Gender</th>
+                        <th>Address</th>
+                        <th>Blood Group</th>
+                        <th>Email</th>
+                        <th>Organ Required</th>
+                        <th>Time Required</th>
+                        <th>Action</th>
+                    </tr>
+                </table>
+            </div>
+
+            <div id="viewDonor" class="info-section">
+                <h3>Donor List</h3>
+                <table id="donorTable">
+                    <tr>
+                        <th>Name</th>
+                        <th>Age</th>
+                        <th>Gender</th>
+                        <th>Address</th>
+                        <th>Blood Group</th>
+                        <th>Email</th>
+                        <th>Organ Donated</th>
+                        <th>Action</th>
+                    </tr>
+                </table>
+            </div>
+        </div>
+    </div>
+
+    <script>
+        function showSection(sectionId) {
+            document.querySelectorAll('.info-section').forEach(section => {
+                section.style.display = 'none';
+            });
+            document.getElementById(sectionId).style.display = 'block';
+            if (sectionId === 'addPatient' || sectionId === 'addDonor' || sectionId === 'viewPatient' || sectionId === 'viewDonor') {
+                document.getElementById('carousel').style.display = 'none';
+            } else {
+                document.getElementById('carousel').style.display = 'block';
+            }
+        }
+        function logout() {
+            window.location.href = 'donor.html';
+        }
+
+        document.addEventListener("DOMContentLoaded", function() {
+            const images = [
+                '297-2970156_vector-freeuse-library-organ-web-portal-bowp-transparent.png',
+                'p4.jpg',
+                'p7.jpg'
+            ];
+            let currentImageIndex = 0;
+            const carousel = document.getElementById('carousel');
+            carousel.style.backgroundImage = `url(${images[currentImageIndex]})`;
+
+            setInterval(() => {
+                currentImageIndex = (currentImageIndex + 1) % images.length;
+                carousel.style.backgroundImage = `url(${images[currentImageIndex]})`;
+            }, 3000);
+        });
+
+        document.getElementById('addPatientForm').addEventListener('submit', function(e) {
+            e.preventDefault();
+            const table = document.getElementById('patientTable');
+            const row = table.insertRow();
+            row.insertCell(0).innerText = document.getElementById('patientName').value;
+            row.insertCell(1).innerText = document.getElementById('patientAge').value;
+            row.insertCell(2).innerText = document.getElementById('patientGender').value;
+            row.insertCell(3).innerText = document.getElementById('patientAddress').value;
+            row.insertCell(4).innerText = document.getElementById('patientBloodGroup').value;
+            row.insertCell(5).innerText = document.getElementById('patientEmail').value;
+            row.insertCell(6).innerText = document.getElementById('patientOrgan').value;
+            row.insertCell(7).innerText = document.getElementById('patientTimeRequired').value;
+            const removeCell = row.insertCell(8);
+            const removeButton = document.createElement('span');
+            removeButton.innerHTML = '<i class="fas fa-trash-alt"></i>';
+            removeButton.className = 'remove-btn';
+            removeButton.onclick = function() {
+                table.deleteRow(row.rowIndex);
+            };
+            removeCell.appendChild(removeButton);
+            document.getElementById('addPatientForm').reset();
+            showSection('viewPatient');
+        });
+
+        document.getElementById('addDonorForm').addEventListener('submit', function(e) {
+            e.preventDefault();
+            const table = document.getElementById('donorTable');
+            const row = table.insertRow();
+            row.insertCell(0).innerText = document.getElementById('donorName').value;
+            row.insertCell(1).innerText = document.getElementById('donorAge').value;
+            row.insertCell(2).innerText = document.getElementById('donorGender').value;
+            row.insertCell(3).innerText = document.getElementById('donorAddress').value;
+            row.insertCell(4).innerText = document.getElementById('donorBloodGroup').value;
+            row.insertCell(5).innerText = document.getElementById('donorEmail').value;
+            row.insertCell(6).innerText = document.getElementById('donorOrgan').value;
+           const removeCell = row.insertCell(8);
+            const removeButton = document.createElement('span');
+            removeButton.innerHTML = '<i class="fas fa-trash-alt"></i>';
+            removeButton.className = 'remove-btn';
+            removeButton.onclick = function() {
+                table.deleteRow(row.rowIndex);
+            };
+            removeCell.appendChild(removeButton);
+            document.getElementById('addDonorForm').reset();
+            showSection('viewDonor');
+        });
+    </script>
+</body>
+</html>

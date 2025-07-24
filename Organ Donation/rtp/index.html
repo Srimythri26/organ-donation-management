@@ -1,0 +1,131 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Organ Donation</title>
+  
+
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@fortawesome/fontawesome-free@6.2.1/css/fontawesome.min.css" 
+  integrity="sha384-QYIZto+st3yW+o8+5OHfT6S482Zsvz2WfOzpFSXMF9zqeLcFV0/wlZpMtyFcZALm" 
+  crossorigin="anonymous">
+
+  <link rel="stylesheet" href="style.css">
+  <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.4.1/css/all.css">
+ 
+</head>
+<style>
+/* Navbar Styles */
+body{
+    background-color: white ;
+    margin-top: 0;
+    margin-left: 0;
+    margin-right: 0;
+}
+.navbar {
+  background-color: #20A0D8;
+  border-radius: 20px;
+  margin-bottom: 20px;
+}
+
+.navbar ul {
+  overflow: auto;
+  text-align: center;
+  padding: 0;
+  margin: 0;
+  overflow: hidden;
+  transition: 1s;
+}
+
+.navbar li {
+  display: inline-block;
+  list-style: none;
+  margin: 12px 12px;
+}
+
+.navbar li a {
+  padding: 5px 5px;
+  text-decoration: none;
+  font-family: Palatino, "Palatino Linotype", "Palatino LT STD", "Book Antiqua", Georgia, serif;
+  font-size: 17px;
+  font-style: normal;
+  font-variant: normal;
+  font-weight: 700;
+  line-height: 26.4px;
+  transition: 0.3s;
+  color: white;
+}
+
+.navbar li a:hover,
+.navbar li a.active {
+  color: white;
+}
+.background-img
+{
+            background-image: url('https://img.freepik.com/free-photo/top-view-solidarity-concept_23-2148829192.jpg?w=1060&t=st=1684870893~exp=1684871493~hmac=8501da6e9c3e0b92e296a5f3ee85775c7df42f68cbc05e65db76553c21f6e284s');
+            background-size: cover;
+            background-repeat: no-repeat;
+            width: 1525px;
+            height: 120vh;
+}
+.gotopbtn
+{
+  position: fixed;
+  width: 50px;
+  height: 50px;
+  background: #27ae60;
+  bottom: 40px;
+  right: 50px;
+  text-decoration: none;
+  text-align: center;
+  line-height: 45px;
+  color: black;
+  font-size: 22px;
+}
+html{
+  scroll-behavior:smooth;
+}
+
+</style>
+<body>
+  <header class="navbar">
+    <ul>
+      <li><a href="#" class="active">Home</a></li>
+      <li><a href="./services .html"><i class="fa-light fa-gear"></i>Services</a></li>
+      <li><a href="./FAQ.html"><i class="fa-solid fa-check"></i>FAQ'S</a></li>
+      <li><a href="./Register Here.html"><i class="fa-duotone fa-memo-pad"></i>Register Here</a></li>
+      <li><a href="#"><i class="fa-sharp fa-solid fa-user" style="color: #1f2151;"></i>About Us</a></li>
+      <li><a href="./Get Involved.html"><i class="fa-sharp fa-solid fa-handshake"></i>Get Involved</a></li>
+      <li><a href="./contact us.html"><i class="fa-solid fa-circle-user"></i>Contact Us</a></li>
+    </ul>
+    <div class="background-img"></div>
+
+  </header>
+  <a class="gotopbtn" href="#"><i class="fas fa-arrow-up"></i>Top</a>
+  <div class="content">
+    <p>
+      Welcome to our organ donation website, where we strive to make a life-changing difference through the gift of life. Our home page serves as a compassionate and 
+      comprehensive platform that aims to connect donors with those in need of life-saving organ transplants. With a user-friendly interface, we have designed 
+      this website to be easily accessible and navigable, ensuring a seamless experience for both potential donors and recipients. 
+      Here, you will find essential information about the importance of organ donation, the processes involved, and the profound impact it can have on countless lives.
+    </p>
+    <p>
+      Through education, awareness, and seamless registration, we aspire to bridge the gap between individuals seeking to contribute to this noble cause and those who
+      desperately await a second chance at life. Together, let us create a community of hope and healing, where the act of giving becomes a beacon of light in the lives of those battling against the odds. 
+      Join us on this journey of compassion and solidarity, as we pave the way for brighter tomorrows through the simple act of organ donation.
+    </p>
+  </div>
+  <script src="https://code.jquery.com/jquery-3.7.0.js"></script>
+
+  <script>
+    $(window).scroll(function(){
+      if($(window).scrollTop())
+      {
+        $("nav").addClass("blue"); 
+      }
+      else{
+        $("nav").removeClass("blue"); 
+      }
+    })
+  </script>
+
+ 
+</body>

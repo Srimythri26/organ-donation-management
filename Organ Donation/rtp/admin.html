@@ -1,0 +1,169 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Admin login form</title>
+  <link rel="stylesheet" type="text/css" href="form.css">
+  <style>
+    /* General reset for body and html */
+    html, body {
+    background-color: #f8f9f9 ;
+    margin-top: 0;
+    margin-left: 0;
+    margin-right: 0;
+    margin-bottom: 210px;
+      font-family: Arial, sans-serif;
+    }
+
+    /* Navbar Styles */
+    .navbar {
+  background-color: #4ba7a7;
+  border-radius: 0;
+  margin-bottom: 20px;
+  width: 100%;
+}
+
+.navbar ul {
+  overflow: auto;
+  text-align: center;
+  padding: 0;
+  margin: 0;
+  overflow: hidden;
+  transition: 1s;
+}
+
+.navbar li {
+  display: inline-block;
+  list-style: none;
+  margin: 12px 12px;
+}
+
+.navbar li a {
+    padding: 10px 20px; /* Adjust padding for top/bottom and left/right */
+    text-decoration: none;
+    font-size: 17px;
+    font-weight: 700;
+    color: white;
+    display: inline-block; /* Ensure items are displayed as blocks */
+    border-radius: 5px; /* Add border-radius for rounded corners */
+    margin: 0 10px; /* Adjust margin between items */
+}
+
+.navbar li a:hover,
+.navbar li a.active {
+    background-color: #1f2151; /* Change background color on hover/active */
+}
+
+    .container {
+      display: flex;
+      width: 100%;
+    }
+    .login-container {
+            background-color: white;
+            padding: 80px;
+            border-radius: 10px;
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+        }
+
+        .login-container h2 {
+            margin: 0 0 20px;
+            text-align: center;
+        }
+
+        .login-container input[type="email"],
+        .login-container input[type="password"] {
+            width: 100%;
+            padding: 10px;
+            margin: 5px 0;
+            border: 1px solid #ccc;
+            border-radius: 5px;
+        }
+
+        .login-container input[type="submit"] {
+            width: 100%;
+            padding: 10px;
+            background-color: #4ba7a7;
+            color: white;
+            border: none;
+            border-radius: 5px;
+            cursor: pointer;
+            margin-top: 10px;
+        }
+
+        .login-container input[type="submit"]:hover {
+            background-color: #1f2151;
+        }
+
+        .error-message {
+            color: red;
+            text-align: center;
+            margin-top: 10px;
+            display: none;
+        }
+   
+    button {
+      padding: 10px 20px;
+      background-color: #4ba7a7;
+      color: white;
+      border: none;
+      border-radius: 4px;
+      cursor: pointer;
+      font-size: 16px;
+    }
+
+    button:hover {
+      background-color: #1f2151;
+    }
+
+    </style>
+</head>
+<body>
+  <header class="navbar">
+    <ul>
+      <li><a href="./Home.html"><i class="fa-duotone fa-memo-pad"></i>HOME</a></li>
+      <li><a href="./user.html"><i class="fa-duotone fa-memo-pad"></i>PATIENT</a></li>
+      <li><a href="./donor.html"><i class="fa-duotone fa-memo-pad"></i>DONOR</a></li>
+      <li><a href="admin.html" class="active">ADMIN</a></li>
+      <li><a href="./FAQ.html"><i class="fa-duotone fa-memo-pad"></i>FAQ'S</a></li>
+      <li><a href="./contact us.html"><i class="fa-duotone fa-memo-pad"></i>CONTACT US</a></li>
+    </ul>
+  </header>
+  <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Donor Login</title>
+    <link rel="stylesheet" href="login.css">
+  </head>
+  <body>
+    
+    <div class="login-container">
+      <h2>Admin Login</h2>
+      <form id="loginForm">
+          <input type="email" id="email" placeholder="Email" required>
+          <input type="password" id="password" placeholder="Password" required>
+          <input type="submit" value="Login">
+      </form>
+      <div class="error-message" id="errorMessage">Invalid email or password</div>
+  </div>
+
+  <script>
+      document.getElementById('loginForm').addEventListener('submit', function(e) {
+          e.preventDefault();
+
+          const email = document.getElementById('email').value;
+          const password = document.getElementById('password').value;
+
+          // Replace these with the correct email and password
+          const correctEmail = "s123@gmail.com";
+          const correctPassword = "123";
+
+          if (email === correctEmail && password === correctPassword) {
+              window.location.href = 'adminp.html';
+          } else {
+              document.getElementById('errorMessage').style.display = 'block';
+          }
+      });
+  </script>
+  </body>
+
+</body>
+</html>
